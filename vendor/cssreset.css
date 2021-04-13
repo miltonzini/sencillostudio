@@ -46,3 +46,14 @@
 			border-collapse: collapse;
 			border-spacing: 0;
 		}
+
+		/* My resets   */
+		a {
+			text-decoration: none;
+			color: inherit;
+		}
+		a:hover, a:focus {
+			font-weight: bold;
+			border: 0;
+		}
+
