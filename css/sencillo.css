@@ -1,0 +1,36 @@
+section.main {
+  background-color: #f3f5f4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100vh; }
+
+.img-container {
+  /*background-color: pink*/ }
+
+@media (min-width: 900px) {
+  img.logo {
+    width: 40vw; } }
+
+@media (max-width: 899px) {
+  img.logo {
+    width: 55vw; } }
+
+section.info {
+  background-color: pink;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100vh; }
