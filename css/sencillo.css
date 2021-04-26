@@ -21,7 +21,7 @@ section.masthead {
       width: 40vw; } }
   @media (max-width: 899px) {
     section.masthead img.logo {
-      width: 70vw; } }
+      width: 55vw; } }
 
 section.info {
   font-size: 1.3em;
