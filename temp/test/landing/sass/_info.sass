@@ -1,0 +1,39 @@
+section.info
+    font-size: 1.3em
+    line-height: 1.2em
+    background-color: white
+    color: $theme-primary
+    text-align: center
+    display: flex
+    justify-content: center /* align horizontal */
+    align-items: center /* align vertical */
+    height: 100vh
+
+    h1, h2, h3
+        font-family: 'Open Sans Regular', sans-serif
+
+    .links-container
+        display: flex
+        @media ( max-width:  640px)
+            //color: yellow
+            flex-direction: column
+        @media ( min-width:  641px)
+            //color: blue
+            flex-direction: row
+            justify-content: space-between
+            
+        .link
+            &:hover, &:focus
+                color: $theme-accent
+                font-weight: bold
+            i // icons
+                font-size: 2em
+            h3
+                margin-top: 0.3em
+            @media ( max-width: 640px ) // vertical margin when columns
+                margin-top: 0.8em
+                margin-bottom: 0.8em
+                
+
+                
+                
