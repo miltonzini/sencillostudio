@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px; }
+
+.body {
+  margin: 0; }
+
 .row {
   padding-left: 1.5em;
   padding-right: 1.5em; }
@@ -21,53 +29,30 @@ section.masthead {
       width: 40vw; } }
   @media (max-width: 899px) {
     section.masthead img.logo {
-      width: 55vw; } }
+      width: 50vw; } }
 
-section.info {
-  font-size: 1.3em;
-  line-height: 1.2em;
-  background-color: white;
-  color: #FF5851;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 100vh; }
-  section.info h1, section.info h2, section.info h3 {
-    font-family: 'Open Sans Regular', sans-serif; }
-  section.info .links-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    @media (max-width: 640px) {
-      section.info .links-container {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column; } }
-    @media (min-width: 641px) {
-      section.info .links-container {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between; } }
-    section.info .links-container .link:hover, section.info .links-container .link:focus {
-      color: #00B3CB;
-      font-weight: bold; }
-    section.info .links-container .link i {
-      font-size: 2em; }
-    section.info .links-container .link h3 {
-      margin-top: 0.3em; }
-    @media (max-width: 640px) {
-      section.info .links-container .link {
-        margin-top: 0.8em;
-        margin-bottom: 0.8em; } }
+section.hola {
+  padding: 50px 20px 50px 20px;
+  background: #d2d3d4;
+  height: 50vh; }
+
+section.servicios {
+  padding: 50px 20px 50px 20px;
+  background: white;
+  height: 50vh; }
+
+section.promo {
+  padding: 50px 20px 50px 20px;
+  background: #FF5851;
+  height: 50vh; }
+
+section.contacto {
+  padding: 50px 20px 50px 20px;
+  background: #f3f5f4;
+  height: 50vh; }
+
+section.footer {
+  margin: 0;
+  padding: 20px;
+  background: #495055;
+  color: white; }
