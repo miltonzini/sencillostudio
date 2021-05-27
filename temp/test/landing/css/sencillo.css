@@ -10,7 +10,7 @@ html {
   padding-left: 1.5em;
   padding-right: 1.5em; }
 
-section.masthead {
+section#masthead {
   background-color: #f3f5f4;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -22,31 +22,31 @@ section.masthead {
   -ms-flex-align: center;
   align-items: center;
   height: 100vh; }
-  section.masthead .img-container {
+  section#masthead .img-container {
     /*background-color: pink*/ }
   @media (min-width: 900px) {
-    section.masthead img.logo {
+    section#masthead img.logo {
       width: 40vw; } }
   @media (max-width: 899px) {
-    section.masthead img.logo {
+    section#masthead img.logo {
       width: 50vw; } }
 
-section.hola {
+section#hola {
   padding: 50px 20px 50px 20px;
   background: #d2d3d4;
   height: 50vh; }
 
-section.servicios {
+section#servicios {
   padding: 50px 20px 50px 20px;
   background: white;
   height: 50vh; }
 
-section.promo {
+section#promo {
   padding: 50px 20px 50px 20px;
   background: #FF5851;
   height: 50vh; }
 
-section.contacto {
+section#contacto {
   padding: 50px 20px 50px 20px;
   background: #f3f5f4;
   height: 50vh; }
