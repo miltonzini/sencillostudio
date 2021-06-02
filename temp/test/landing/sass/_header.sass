@@ -16,7 +16,16 @@
             &:not(:last-child)
                 margin-bottom: 5px
         
+        @media (min-width: 40em)
+            display: none
+        
     &__links
         a
             font-size: $font-sm
+            //font-weight: bold
+            &:not(:last-child)
+                margin-right: 16px
                 
+        
+        @media (max-width: 39.9375em)
+            display: none
