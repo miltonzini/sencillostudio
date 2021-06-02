@@ -69,7 +69,10 @@ a, a:visited, a:hover {
     display: none; } }
 
 .header__links a {
-  font-size: 0.875rem; }
+  font-size: 0.875rem;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
   .header__links a:not(:last-child) {
     margin-right: 16px; }
 
