@@ -2,6 +2,7 @@
 
     // Hamburgen Open Styles
     &.open
+        display: block
         .header__menu
             > span:first-child
                 transform: rotate(45deg)
@@ -11,6 +12,8 @@
                 transform: rotate(-45deg)
 
     .overlay
+        //display: none
+        opacity: 0
         position: fixed
         top: 3.1875rem
         right: 0
@@ -19,8 +22,6 @@
         //background-color: $theme-dark-40
         background-image: linear-gradient($theme-dark-20, transparent)
 
-        &.fade-in
-            
 
     nav
         padding: 15px   

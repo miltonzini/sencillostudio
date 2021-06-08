@@ -91,20 +91,21 @@ section {
     -ms-flex-align: center;
     align-items: center; }
 
-.header.open .header__menu > span:first-child {
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg); }
-
-.header.open .header__menu > span:nth-child(2) {
-  opacity: 0; }
-
-.header.open .header__menu > span:last-child {
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg); }
+.header.open {
+  display: block; }
+  .header.open .header__menu > span:first-child {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  .header.open .header__menu > span:nth-child(2) {
+    opacity: 0; }
+  .header.open .header__menu > span:last-child {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
 
 .header .overlay {
+  opacity: 0;
   position: fixed;
   top: 3.1875rem;
   right: 0;

@@ -1,6 +1,6 @@
 const btnHamburguer = document.querySelector('#btnHamburguer');
 const header = document.querySelector('.header');
-const overlay = document.querySelector('.overlay')
+const overlay = document.querySelector('.overlay');
 
 btnHamburguer.addEventListener('click', function(){
     console.log('open haburguer');
