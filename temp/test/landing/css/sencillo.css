@@ -1,4 +1,53 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@-webkit-keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0; }
+  1% {
+    visibility: visible;
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0; }
+  1% {
+    visibility: visible;
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.fade-in {
+  -webkit-animation: fade-in 300ms ease-in-out forwards;
+  animation: fade-in 300ms ease-in-out forwards; }
+
+@-webkit-keyframes fade-out {
+  from {
+    visibility: visible;
+    opacity: 1; }
+  99% {
+    visibility: visible;
+    opacity: 0; }
+  to {
+    visibility: hidden;
+    opacity: 0; } }
+
+@keyframes fade-out {
+  from {
+    visibility: visible;
+    opacity: 1; }
+  99% {
+    visibility: visible;
+    opacity: 0; }
+  to {
+    visibility: hidden;
+    opacity: 0; } }
+
+.fade-out {
+  -webkit-animation: fade-out 300ms ease-in-out forwards;
+  animation: fade-out 300ms ease-in-out forwards; }
+
 * {
   margin: 0;
   padding: 0;
@@ -42,6 +91,30 @@ section {
     -ms-flex-align: center;
     align-items: center; }
 
+.header.open .header__menu > span:first-child {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.header.open .header__menu > span:nth-child(2) {
+  opacity: 0; }
+
+.header.open .header__menu > span:last-child {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+.header .overlay {
+  position: fixed;
+  top: 3.1875rem;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d2d3d4), to(transparent));
+  background-image: -webkit-linear-gradient(#d2d3d4, transparent);
+  background-image: -o-linear-gradient(#d2d3d4, transparent);
+  background-image: linear-gradient(#d2d3d4, transparent); }
+
 .header nav {
   padding: 15px;
   position: fixed;
@@ -73,19 +146,6 @@ section {
   transform-origin: 3px 1px; }
   .header__menu > span:not(:last-child) {
     margin-bottom: 5px; }
-
-.header__menu.open > span:first-child {
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg); }
-
-.header__menu.open > span:nth-child(2) {
-  opacity: 0; }
-
-.header__menu.open > span:last-child {
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg); }
 
 @media (min-width: 40em) {
   .header__menu {
