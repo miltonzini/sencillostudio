@@ -212,7 +212,10 @@ section#contacto {
   height: 50vh; }
 
 section.footer {
+  font-size: 0.8rem;
   margin: 0;
   padding: 20px;
   background: #495055;
   color: white; }
+  section.footer p {
+    text-align: center; }
