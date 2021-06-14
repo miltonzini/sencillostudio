@@ -221,7 +221,7 @@ section#masthead {
       width: 50vw; } }
 
 section#hola {
-  height: 70vh;
+  height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -230,6 +230,9 @@ section#hola {
   -ms-flex-direction: row;
   flex-direction: row;
   position: relative; }
+  @media (min-width: 40em) {
+    section#hola {
+      border-bottom: 2px #FF5851 solid; } }
   section#hola .color {
     background-color: #FF5851;
     width: 100px;
@@ -240,11 +243,15 @@ section#hola {
   section#hola .bg-row {
     height: 100%;
     width: calc( 100vw - 100px);
-    background: #f3f5f4 url("../img/bg/hola.jpg") no-repeat right bottom;
-    background-size: cover; }
+    background: #f3f5f4 url("../img/bg/hola.jpg") no-repeat;
+    background-size: cover;
+    background-position: center 60%; }
     @media (max-width: 39.9375em) {
       section#hola .bg-row {
         width: 100vh; } }
+    @media (min-width: 64em) {
+      section#hola .bg-row {
+        background-position: center 65%; } }
   section#hola h1 {
     color: #FF5851;
     text-transform: uppercase;
@@ -252,7 +259,11 @@ section#hola {
     font-weight: bold;
     position: absolute;
     top: 30px;
-    left: 48px; }
+    left: 30px; }
+    @media (min-width: 40em) {
+      section#hola h1 {
+        top: 45px;
+        left: 48px; } }
     section#hola h1 .accent {
       color: white; }
       @media (max-width: 39.9375em) {

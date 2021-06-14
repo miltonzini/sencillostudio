@@ -1,9 +1,12 @@
 section#hola
     //padding: 50px 20px 50px 20px
-    height: 70vh
+    height: 90vh
     display: flex
     flex-direction: row
     position: relative
+    @include breakpoint-up(medium)
+        border-bottom: 2px $theme-primary solid
+    
 
     .color
         background-color: $theme-primary
@@ -17,8 +20,11 @@ section#hola
         width: calc( 100vw - 100px )
         @include breakpoint-down(small)
             width: 100vh
-        background: $theme-soft url("../img/bg/hola.jpg") no-repeat right bottom
+        background: $theme-soft url("../img/bg/hola.jpg") no-repeat
         background-size: cover
+        background-position: center 60%
+        @include breakpoint-up(large)
+            background-position: center 65%
 
     h1
         color: $theme-primary
@@ -27,7 +33,10 @@ section#hola
         font-weight: bold
         position: absolute
         top: 30px
-        left: 48px
+        left: 30px
+        @include breakpoint-up(medium)
+            top: 45px
+            left: 48px
         
         .accent
             color: white
