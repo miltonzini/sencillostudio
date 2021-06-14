@@ -20,6 +20,8 @@ section#hola
         width: calc( 100vw - 100px )
         @include breakpoint-down(small)
             width: 100vh
+        padding-left: 20px
+        padding-right: 20px
         background: $theme-soft url("../img/bg/hola.jpg") no-repeat
         background-size: cover
         background-position: center 60%
@@ -29,7 +31,7 @@ section#hola
     h1
         color: $theme-primary
         text-transform: uppercase
-        font-size: $font-lg
+        font-size: $font-xl
         font-weight: bold
         position: absolute
         top: 40px
@@ -42,4 +44,17 @@ section#hola
             color: white
             @include breakpoint-down(small)
                 color: $theme-primary
+
+    h2
+        color: $theme-primary
+        line-height: 1.5em
+        text-align: center
+        font-size: $font-lg
+        margin-top: 8em
+        @include breakpoint-down(small)
+            font-size: $font-md
+        @include breakpoint-up(large)
+            padding-right: 3em
+            padding-left: 3em
+
             

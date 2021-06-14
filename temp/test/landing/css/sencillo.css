@@ -243,6 +243,8 @@ section#hola {
   section#hola .bg-row {
     height: 100%;
     width: calc( 100vw - 100px);
+    padding-left: 20px;
+    padding-right: 20px;
     background: #f3f5f4 url("../img/bg/hola.jpg") no-repeat;
     background-size: cover;
     background-position: center 60%; }
@@ -269,6 +271,19 @@ section#hola {
       @media (max-width: 39.9375em) {
         section#hola h1 .accent {
           color: #FF5851; } }
+  section#hola h2 {
+    color: #FF5851;
+    line-height: 1.5em;
+    text-align: center;
+    font-size: 1.3125rem;
+    margin-top: 8em; }
+    @media (max-width: 39.9375em) {
+      section#hola h2 {
+        font-size: 1.125rem; } }
+    @media (min-width: 64em) {
+      section#hola h2 {
+        padding-right: 3em;
+        padding-left: 3em; } }
 
 section#servicios {
   padding: 50px 20px 50px 20px;
