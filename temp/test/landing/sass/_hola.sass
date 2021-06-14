@@ -1,4 +1,36 @@
 section#hola
-    padding: 50px 20px 50px 20px
-    background: $theme-dark-20
-    height: 50vh
+    //padding: 50px 20px 50px 20px
+    height: 70vh
+    display: flex
+    flex-direction: row
+    position: relative
+
+    .color
+        background-color: $theme-primary
+        width: 100px
+        height: 100%
+        @include breakpoint-down(small)
+            display: none
+
+    .bg-row
+        height: 100%
+        width: calc( 100vw - 100px )
+        @include breakpoint-down(small)
+            width: 100vh
+        background: $theme-soft url("../img/bg/hola.jpg") no-repeat right bottom
+        background-size: cover
+
+    h1
+        color: $theme-primary
+        text-transform: uppercase
+        font-size: $font-lg
+        font-weight: bold
+        position: absolute
+        top: 30px
+        left: 48px
+        
+        .accent
+            color: white
+            @include breakpoint-down(small)
+                color: $theme-primary
+            
