@@ -233,6 +233,8 @@ section#hola {
   @media (min-width: 40em) {
     section#hola {
       border-bottom: 2px #FF5851 solid; } }
+  section#hola em {
+    font-weight: 600; }
   section#hola .color {
     background-color: #FF5851;
     width: 100px;
