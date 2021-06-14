@@ -258,7 +258,7 @@ section#hola {
     font-size: 2rem;
     font-weight: bold;
     position: absolute;
-    top: 30px;
+    top: 40px;
     left: 30px; }
     @media (min-width: 40em) {
       section#hola h1 {
