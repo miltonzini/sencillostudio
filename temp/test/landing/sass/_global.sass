@@ -25,6 +25,13 @@ html
 a, a:visited, a:hover
     text-decoration: none
 
+h1
+    text-transform: uppercase
+    font-weight: bold
+    font-size: $font-xl
+    @include breakpoint-down(small)
+        font-size: $font-md
+
 .row
     padding-left: 1.5em
     padding-right: 1.5em

@@ -75,6 +75,14 @@ html {
 a, a:visited, a:hover {
   text-decoration: none; }
 
+h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.75rem; }
+  @media (max-width: 39.9375em) {
+    h1 {
+      font-size: 1.125rem; } }
+
 .row {
   padding-left: 1.5em;
   padding-right: 1.5em; }
@@ -258,16 +266,17 @@ section#hola {
         background-position: center 65%; } }
   section#hola h1 {
     color: #FF5851;
-    text-transform: uppercase;
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 2.5rem;
     position: absolute;
     top: 40px;
     left: 30px; }
+    @media (max-width: 39.9375em) {
+      section#hola h1 {
+        font-size: 1.75rem; } }
     @media (min-width: 40em) {
       section#hola h1 {
         top: 45px;
-        left: 48px; } }
+        left: 35px; } }
     section#hola h1 .accent {
       color: white; }
       @media (max-width: 39.9375em) {
@@ -291,16 +300,23 @@ section#servicios {
   padding: 50px 20px 50px 20px;
   background: white;
   height: 70vh; }
+  section#servicios h1 {
+    text-align: center;
+    color: #FF5851; }
 
 section#promo {
   padding: 50px 20px 50px 20px;
   background: #FF5851;
   height: 50vh; }
+  section#promo h1 {
+    color: #f3f5f4; }
 
 section#contacto {
   padding: 50px 20px 50px 20px;
   background: #f3f5f4;
   height: 70vh; }
+  section#contacto h1 {
+    color: #FF5851; }
 
 section.footer {
   font-size: 0.8rem;
