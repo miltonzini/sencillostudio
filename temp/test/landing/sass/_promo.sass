@@ -1,8 +1,21 @@
 section#promo
-    padding: 50px 20px 50px 20px
+    padding: 110px 20px
     background: $theme-primary
-    height: 50vh
+    color: $theme-soft
+    //height: 50vh
+    text-align: center
 
-    h1
-        //text-align: center
-        color: $theme-soft
+    h2
+        font-size: 24px
+        @include breakpoint-down(small)
+            font-size: $font-md
+        max-width: 29rem
+        margin-left: auto
+        margin-right: auto
+        margin-bottom: 35px
+        line-height: 1.3em
+
+    a.button
+        padding: 0.25rem 3rem 
+        border: $theme-soft 1px solid
+        border-radius: 40px

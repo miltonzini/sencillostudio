@@ -63,7 +63,9 @@
 html {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
 .body {
   margin: 0;
@@ -346,11 +348,24 @@ section#servicios {
       padding-top: 9px; }
 
 section#promo {
-  padding: 50px 20px 50px 20px;
+  padding: 110px 20px;
   background: #FF5851;
-  height: 50vh; }
-  section#promo h1 {
-    color: #f3f5f4; }
+  color: #f3f5f4;
+  text-align: center; }
+  section#promo h2 {
+    font-size: 24px;
+    max-width: 29rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+    line-height: 1.3em; }
+    @media (max-width: 39.9375em) {
+      section#promo h2 {
+        font-size: 1.125rem; } }
+  section#promo a.button {
+    padding: 0.25rem 3rem;
+    border: #f3f5f4 1px solid;
+    border-radius: 40px; }
 
 section#contacto {
   padding: 50px 20px 50px 20px;
