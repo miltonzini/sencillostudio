@@ -376,9 +376,36 @@ section#promo {
 section#contacto {
   padding: 50px 20px 50px 20px;
   background: #f3f5f4;
-  height: 70vh; }
-  section#contacto h1 {
-    color: #FF5851; }
+  color: #FF5851;
+  text-align: center;
+  line-height: 1.3em; }
+  section#contacto .link-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 0.5rem; }
+    section#contacto .link-wrapper svg {
+      margin-right: 0.3rem;
+      width: 1.5rem; }
+  section#contacto .link-wrapper-whatsapp p {
+    padding-top: 0.125rem; }
+  section#contacto h2 {
+    font-size: 24px;
+    max-width: 29rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+    line-height: 1.3em; }
+    @media (max-width: 39.9375em) {
+      section#contacto h2 {
+        font-size: 1.125rem; } }
 
 section.footer {
   font-size: 0.8rem;
