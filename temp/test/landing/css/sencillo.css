@@ -270,7 +270,7 @@ section#hola {
     color: #FF5851;
     font-size: 2.5rem;
     position: absolute;
-    top: 50px;
+    top: 80px;
     left: 30px; }
     @media (max-width: 39.9375em) {
       section#hola h1 {
@@ -295,7 +295,7 @@ section#hola {
     max-width: 30em; }
     @media (max-width: 39.9375em) {
       section#hola h2 {
-        margin-top: 9.5em;
+        margin-top: 11em;
         font-size: 1.125rem; } }
 
 section#servicios {
@@ -351,7 +351,7 @@ section#servicios {
       section#servicios .servicio svg.bi-braces {
         width: 3.3rem; }
     section#servicios .servicio:nth-child(2) svg {
-      padding-bottom: 2px; }
+      padding-bottom: 4px; }
 
 section#promo {
   padding: 110px 20px;
