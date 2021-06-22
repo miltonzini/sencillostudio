@@ -341,11 +341,17 @@ section#servicios {
       @media (max-width: 63.9375em) {
         section#servicios .servicio p {
           font-size: 0.9rem; } }
-    section#servicios .servicio img {
-      width: 2.375rem;
-      padding-bottom: 0.45rem; }
-    section#servicios .servicio:nth-child(2) img {
-      padding-top: 9px; }
+    section#servicios .servicio svg {
+      padding-bottom: 0.45rem;
+      height: auto; }
+      section#servicios .servicio svg path {
+        fill: #00B3CB; }
+      section#servicios .servicio svg.bi-brush {
+        width: 2.5rem; }
+      section#servicios .servicio svg.bi-braces {
+        width: 3.3rem; }
+    section#servicios .servicio:nth-child(2) svg {
+      padding-bottom: 2px; }
 
 section#promo {
   padding: 110px 20px;

@@ -37,11 +37,17 @@ section#servicios
             font-size: 1.125rem // 18px
             @include breakpoint-down(medium)
                 font-size: 0.9rem
-        img
-            width: 2.375rem // 38px
+        svg
             padding-bottom: 0.45rem
+            height: auto
+            path
+                fill: $theme-accent
+            &.bi-brush
+                width: 2.5rem // 40px
+            &.bi-braces
+                width: 3.3rem // 40px
 
-        &:nth-child(2) // para compensar diferencia de altura en el segundo svg
-            img
-                padding-top: 9px
             
+        &:nth-child(2) // para compensar diferencia de altura en el segundo svg
+            svg
+                padding-bottom: 4px
