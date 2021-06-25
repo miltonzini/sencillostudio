@@ -131,10 +131,7 @@ section {
   height: 100%;
   overflow: auto;
   background-color: black;
-  background-color: rgba(0, 0, 0, 0.4);
-  -webkit-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease; }
+  background-color: rgba(0, 0, 0, 0.4); }
 
 .modal-content {
   color: #FF5851;
