@@ -26,6 +26,9 @@ html
 a, a:visited, a:hover
     text-decoration: none
 
+strong
+    font-weight: bold
+
 h1
     text-transform: uppercase
     font-weight: bold
@@ -88,13 +91,15 @@ section
 
 // Modal Content-Box
 .modal-content 
-  color: $theme-primary
-  background-color: #fefefe
-  margin: 15% auto // 15% from the top and centered
+  color: $theme-dark
+  background-color: $theme-soft
+  margin-top: 10%
+  margin-left: auto
+  margin-right: auto
   padding: 20px
   border: 1px solid #888
   border-radius: 5px
-  width: 80% // Could be more or less, depending on screen size 
+  max-width: 80% // Could be more or less, depending on screen size 
 
 
 // The Close Button 

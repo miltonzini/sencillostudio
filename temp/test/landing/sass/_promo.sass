@@ -19,3 +19,42 @@ section#promo
         padding: 0.25rem 3rem 
         border: $theme-soft 1px solid
         border-radius: 40px
+
+    
+    .modal
+        @media ( max-width: 500px )
+            font-size: 12px
+        .modal-content
+            .wrapper
+                display: flex
+                justify-content: center
+                flex-direction: row
+                @include breakpoint-down(medium)
+                    flex-direction: column
+            
+            .combo
+                border: 1px solid $theme-primary-40
+                border-radius: 0.5em
+                padding: 2em 1em
+                line-height: 1.4em
+                margin-right: 1em
+                margin-left: 1em
+                @include breakpoint-down(medium)
+                    margin-top: 0.25em //4px
+                    margin-bottom: 0.25em //4px
+                    width: 18.625em //298px
+                    margin-left: auto
+                    margin-right: auto
+                @include breakpoint-up(large)
+                    min-width: 18.625em    
+                .price
+                    color: $theme-accent
+                    font-weight: bold
+                    font-size: $font-xl
+                    margin-bottom: 0.15em
+                    .currency
+                        font-size: $font-md
+                h3
+                    margin-bottom: 0.5em
+                    font-weight: bold
+                

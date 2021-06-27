@@ -77,6 +77,9 @@ html {
 a, a:visited, a:hover {
   text-decoration: none; }
 
+strong {
+  font-weight: bold; }
+
 h1 {
   text-transform: uppercase;
   font-weight: bold;
@@ -134,13 +137,15 @@ section {
   background-color: rgba(0, 0, 0, 0.4); }
 
 .modal-content {
-  color: #FF5851;
-  background-color: #fefefe;
-  margin: 15% auto;
+  color: #1C242A;
+  background-color: #f3f5f4;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
   padding: 20px;
   border: 1px solid #888;
   border-radius: 5px;
-  width: 80%; }
+  max-width: 80%; }
 
 .close {
   color: #aaa;
@@ -405,6 +410,53 @@ section#promo {
     padding: 0.25rem 3rem;
     border: #f3f5f4 1px solid;
     border-radius: 40px; }
+  @media (max-width: 500px) {
+    section#promo .modal {
+      font-size: 12px; } }
+  section#promo .modal .modal-content .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+    @media (max-width: 63.9375em) {
+      section#promo .modal .modal-content .wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; } }
+  section#promo .modal .modal-content .combo {
+    border: 1px solid #ffbcb9;
+    border-radius: 0.5em;
+    padding: 2em 1em;
+    line-height: 1.4em;
+    margin-right: 1em;
+    margin-left: 1em; }
+    @media (max-width: 63.9375em) {
+      section#promo .modal .modal-content .combo {
+        margin-top: 0.25em;
+        margin-bottom: 0.25em;
+        width: 18.625em;
+        margin-left: auto;
+        margin-right: auto; } }
+    @media (min-width: 64em) {
+      section#promo .modal .modal-content .combo {
+        min-width: 18.625em; } }
+    section#promo .modal .modal-content .combo .price {
+      color: #00B3CB;
+      font-weight: bold;
+      font-size: 1.75rem;
+      margin-bottom: 0.15em; }
+      section#promo .modal .modal-content .combo .price .currency {
+        font-size: 1.125rem; }
+    section#promo .modal .modal-content .combo h3 {
+      margin-bottom: 0.5em;
+      font-weight: bold; }
 
 section#contacto {
   padding: 110px 20px;
