@@ -412,7 +412,9 @@ section#promo {
     border-radius: 40px; }
   @media (max-width: 500px) {
     section#promo .modal {
-      font-size: 12px; } }
+      font-size: 12px; }
+      section#promo .modal .modal-content {
+        margin-top: 3.75rem; } }
   section#promo .modal .modal-content .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -431,7 +433,8 @@ section#promo {
         -ms-flex-direction: column;
         flex-direction: column; } }
   section#promo .modal .modal-content .combo {
-    border: 1px solid #ffbcb9;
+    border: 1px solid #d2d3d4;
+    background-color: white;
     border-radius: 0.5em;
     padding: 2em 1em;
     line-height: 1.4em;
