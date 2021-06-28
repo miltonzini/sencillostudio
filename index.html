@@ -36,36 +36,142 @@
 	
 </head>
 <body>
-	<section class="masthead">
+	<header class="header">
+		<div class="overlay has-fade"></div>
+		<nav class="container flex flex-jc-sb flex-ai-c">
+			<a href="#" class="header__logo">
+				<img src="img/logo/sencillostudio-sm.svg" alt="SencilloStudio" />
+			</a>
+
+			<a id="btnHamburguer" href="#" class="header__toggle hide-for-desktop">
+				<span></span>
+				<span></span>
+				<span></span>
+			</a>
+
+			<div class="header__links hide-for-mobile">
+				<a href="#hola">Hola</a>
+				<a href="#servicios">Servicios</a>
+				<a href="#promo">Promo</a>
+				<a href="#contacto">Contacto</a>
+			</div>
+		</nav>
+		
+		<div class="header__menu has-fade">
+			<a class="header__menu__anchor" href="#hola">Hola</a>
+			<a class="header__menu__anchor" href="#servicios">Servicios</a>
+			<a class="header__menu__anchor" href="#promo">Promo</a>
+			<a class="header__menu__anchor" href="#contacto">Contacto</a>
+		</div>
+	</header>
+
+	<section id="masthead">
 		<div class="img-container">			
 			<img class="logo" src="img/logo/sencillostudio-logo.svg">
 		</div>
 	</section>
 	
-	<section class="info">
+	<section id="hola">
+		<div class="color">
+		</div>
+		<div class="bg-row">
+			<h1><span class="accent">Ho</span>la</h1>
+			<h2>Somos un estudio de <em>diseño gráfico</em> y <em>desarrollo web</em> situado de Buenos Aires. Nos dedicamos a dar soluciones integrales a pymes y emprendimientos.</h2>
+		</div>
+	</section>
+
+	<section id="servicios">
 		<div class="row">
-			<div class="text-container">
-				<h2>Pronto Novedades!</h2>
-				<br>
-				<h3>Mientras podés contactarte con nosotros por estos medios:</h3>
-				<br>
-				<div class="links-container">
-					<a href="mailto:info@sencillostudio.ar" target="_blank">
-						<div class="link">
-						<i class="bi bi-envelope"></i>
-						<h3>info@sencillostudio.ar</h3>
-					</a>
-					</div>
-					<a href="https://www.instagram.com/sencillo_studio/" target="_blank">
-						<div class="link">
-						<i class="bi bi-instagram"></i>
-						<h3>instagram.com/sencillo_studio</h3>
-					</a>
+			<h1>Servicios</h1>
+			<div class="wrapper flex flex-jc-c">
+				<div class="servicio">
+					<!-- <img src="../img/icons/brush.svg" alt=""> -->
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-brush" viewBox="0 0 16 16"><path d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.067 6.067 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.118 8.118 0 0 1-3.078.132 3.659 3.659 0 0 1-.562-.135 1.382 1.382 0 0 1-.466-.247.714.714 0 0 1-.204-.288.622.622 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896.126.007.243.025.348.048.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04zM4.705 11.912a1.23 1.23 0 0 0-.419-.1c-.246-.013-.573.05-.879.479-.197.275-.355.532-.5.777l-.105.177c-.106.181-.213.362-.32.528a3.39 3.39 0 0 1-.76.861c.69.112 1.736.111 2.657-.12.559-.139.843-.569.993-1.06a3.122 3.122 0 0 0 .126-.75l-.793-.792zm1.44.026c.12-.04.277-.1.458-.183a5.068 5.068 0 0 0 1.535-1.1c1.9-1.996 4.412-5.57 6.052-8.631-2.59 1.927-5.566 4.66-7.302 6.792-.442.543-.795 1.243-1.042 1.826-.121.288-.214.54-.275.72v.001l.575.575zm-4.973 3.04.007-.005a.031.031 0 0 1-.007.004zm3.582-3.043.002.001h-.002z"/></svg>
+					<h2>Diseño Gráfico</h2>
+					<p>Diseño de marca, diseño de piezas para redes sociales, diseño para impresión.</p>
 				</div>
+				<div class="servicio">
+					<!-- <img src="../img/icons/braces.svg" alt=""> -->
+					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor" class="bi bi-braces" viewBox="0 0 16 16"><path d="M2.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C3.25 2 2.49 2.759 2.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6zM13.886 7.9v.163c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456V7.332c-1.114 0-1.49-.362-1.49-1.456V4.352C13.51 2.759 12.75 2 11.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6z"/></svg>
+					<h2>Desarrollo Web</h2>
+					<p>Diseño web, email marketing.</p>
 				</div>
 			</div>
 		</div>
 	</section>
 
+	<section id="promo">
+		<div class="row">
+			<h2>Tenemos planes especiales para emprendimientos y pymes.</h2>
+			<a href="#promo" class="button" id="myBtn">ver planes</a>
+
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+				<!-- Modal content -->
+				<div class="modal-content">
+				<span class="close">&times;</span>
+					<div class="wrapper">
+						<div class="combo">
+							<p class="price">7000<span class="currency">ARS</span></p>
+							<h3>Combo Low Cost</h3>
+							<p>Dominio .com.ar</p>
+							<p>Landing Page</p>
+							<p>Alojamiento Gratuito</p>
+							<p>Alta en Google</p>
+						</div>
+						<div class="combo">
+							<p class="price">8500<span class="currency">ARS</span></p>
+							<h3>Combo Emprendimiento</h3>
+							<p>Dominio .com.ar</p>
+							<p>Landing Page</p>
+							<p>Diseño de Logo y colores de marca</p>
+							<p>Imágenes para redes sociales</p>
+							<p>Alojamiento Gratuito</p>
+							<p>Alta en Google</p>
+							<p>Diseño de tarjetas personales</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="contacto">
+		<div class="row">
+			<h2>
+				¿Tenés un Proyecto?<br>
+				¡Escribinos y desarrollémoslo juntos!
+			</h2>
+
+			<a href="mailto:info@sencillostudio.ar">
+				<div class="link-wrapper link-wrapper-envelope">
+					<svg xmlns="http://www.w3.org/2000/svg" width="27.86" height="20.895" viewBox="0 0 27.86 20.895"><g id="envelope" data-name="Grupo 3" transform="translate(-280.226 -2603)"><path id="envelope" d="M0,5.482A3.482,3.482,0,0,1,3.482,2H24.377A3.482,3.482,0,0,1,27.86,5.482v13.93a3.482,3.482,0,0,1-3.482,3.483H3.482A3.483,3.483,0,0,1,0,19.412ZM3.482,3.741A1.741,1.741,0,0,0,1.741,5.482V5.86L13.93,13.174,26.119,5.86V5.482a1.741,1.741,0,0,0-1.741-1.741ZM26.119,7.891l-8.285,4.971,8.285,5.008V7.892ZM26.06,19.867l-9.916-5.992L13.93,15.2l-2.215-1.329L1.8,19.865a1.741,1.741,0,0,0,1.682,1.289H24.377A1.741,1.741,0,0,0,26.06,19.867Zm-24.318-2,8.285-5.008L1.741,7.891v9.977Z" transform="translate(280.226 2601)" fill="#00b3c8"/></g></svg>
+					<p>info@sencillostudio.ar</p>
+				</div>
+			</a>
+			<a href="https://wa.me/5491165981357">
+				<div class="link-wrapper link-wrapper-whatsapp">
+					<svg xmlns="http://www.w3.org/2000/svg" width="25.423" height="25.538" viewBox="0 0 25.423 25.538"><path id="whatsapp" d="M21.709,3.713A12.536,12.536,0,0,0,12.76,0,12.664,12.664,0,0,0,1.789,18.98L0,25.538l6.71-1.759a12.662,12.662,0,0,0,6.049,1.54h.006A12.651,12.651,0,0,0,21.708,3.713ZM12.76,23.178A10.491,10.491,0,0,1,7.4,21.709l-.383-.23L3.039,22.523,4.1,18.64l-.249-.4a10.514,10.514,0,1,1,8.906,4.938ZM18.53,15.3c-.314-.158-1.867-.923-2.16-1.031s-.5-.158-.71.158-.819,1.031-1,1.237-.37.236-.686.08a8.634,8.634,0,0,1-2.541-1.572,9.65,9.65,0,0,1-1.761-2.19c-.182-.316-.018-.485.14-.643.139-.14.314-.37.472-.552a2.018,2.018,0,0,0,.316-.527.589.589,0,0,0-.024-.554C10.5,9.55,9.866,7.99,9.6,7.361s-.516-.535-.71-.543-.394-.011-.607-.011a1.164,1.164,0,0,0-.844.394,3.544,3.544,0,0,0-1.1,2.64,6.126,6.126,0,0,0,1.293,3.27,14.059,14.059,0,0,0,5.4,4.776,17.593,17.593,0,0,0,1.8.667,4.344,4.344,0,0,0,1.989.128,3.276,3.276,0,0,0,2.136-1.505,2.647,2.647,0,0,0,.182-1.505c-.078-.134-.29-.212-.607-.37Z" fill="#00b3c8"/></svg>
+					<p>(+54) 11-6598-1357</p>
+				</div>
+			</a>
+				
+
+		</div>
+	</section>
+
+	<section class="footer">
+		<div class="row">
+			<p>© 2021 - Sencilo Studio</p>
+		</div>
+	</section>
+	
+	<script type="text/javascript">
+		window.addEventListener("scroll", function(){
+			var header = document.querySelector("nav");
+			header.classList.toggle("sticky", window.scrollY > 180);
+		})
+	</script>
+	<script src="js/script.js"></script>
 </body>
 </html>
