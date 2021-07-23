@@ -263,7 +263,7 @@ section#masthead {
     /*background-color: pink*/ }
   @media (min-width: 900px) {
     section#masthead img.logo {
-      width: 40vw; } }
+      width: 37vw; } }
   @media (max-width: 899px) {
     section#masthead img.logo {
       width: 50vw; } }
