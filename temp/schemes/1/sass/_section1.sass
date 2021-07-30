@@ -1,0 +1,48 @@
+section#section1
+    //padding: 50px 20px 50px 20px
+    height: 90vh
+    display: flex
+    flex-direction: row
+    position: relative
+    @include breakpoint-up(medium)
+        border-bottom: 2px $theme-primary solid
+
+    em
+        font-weight: 600
+    
+
+    .bg-row // globalizar esta clase 
+        width: 100%
+        padding-left: 20px
+        padding-right: 20px
+        background: $theme-soft url("../img/bg/sectionbg.jpg") no-repeat
+        background-size: cover
+        background-position: center 60%
+
+
+    h1
+        color: $theme-primary
+        font-size: $font-xxl
+        @include breakpoint-down(small)
+            font-size: $font-xl
+        position: absolute
+        top: 80px
+        left: 30px
+        @include breakpoint-up(medium)
+            top: 60px
+            left: 35px
+        
+        
+
+    h2
+        color: $theme-primary
+        line-height: 1.5em
+        text-align: center
+        font-size: $font-lg
+        margin-top: 8em
+        margin-left: auto
+        margin-right: auto
+        max-width: 30em
+        @include breakpoint-down(small)
+            margin-top: 11em
+            font-size: $font-md
