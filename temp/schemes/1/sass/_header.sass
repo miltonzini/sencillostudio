@@ -38,6 +38,13 @@
         visibility: hidden
         transition: 0.6s
 
+    &__textlogo
+        font-size: 0.000009rem
+        visibility: hidden
+        transition: 0.6s
+        color: rgba(1, 1, 1, 0.01 )
+
+
 
     &__toggle
         > span
@@ -57,6 +64,10 @@
         .header__logo
             visibility: visible
             width: 80px
+        .header__textlogo
+            visibility: visible
+            font-size: 1rem
+            color: $theme-primary
 
     &__menu
         background-color: $white
