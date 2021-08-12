@@ -1,0 +1,26 @@
+section#masthead
+    background-color: $theme-soft
+    display: flex
+    justify-content: center /* align horizontal */
+    align-items: center /* align vertical */
+    flex-direction: column
+    height: 100vh
+
+    img.logo
+        //adapt media queries if needed
+        @media(min-width: 900px)
+            width: 37vw
+        @media(max-width: 899px)
+            width: 50vw
+    h1.logo
+        text-transform: none
+        color: $theme-primary
+        text-align: center
+    .brand-descrip
+        text-align: center
+        margin-top: 0.6rem
+    
+    .arrow
+        font-size: 1.6em
+        margin-top: 1em
+        color: $theme-primary
