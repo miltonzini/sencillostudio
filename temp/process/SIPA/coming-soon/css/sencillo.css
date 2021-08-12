@@ -137,7 +137,7 @@ section {
 
 .modal-content {
   color: #1E1E1E;
-  background-color: #f3f5f4;
+  background-color: #f4F4F4;
   margin-top: 10%;
   margin-left: auto;
   margin-right: auto;
@@ -184,7 +184,7 @@ section {
   background-image: linear-gradient(#d2d3d4, transparent); }
 
 .header nav {
-  background-color: #f3f5f4;
+  background-color: #f4F4F4;
   padding-top: 15px;
   padding-bottom: 15px;
   position: fixed;
@@ -259,7 +259,7 @@ section {
     margin-right: 16px; }
 
 section#masthead {
-  background-color: #f3f5f4;
+  background-color: #f4F4F4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
