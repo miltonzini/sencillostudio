@@ -259,7 +259,8 @@ section {
     margin-right: 16px; }
 
 section#masthead {
-  background-color: #fff;
+  background-image: url("../img/bg/bg-plano-sipa.jpg");
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
