@@ -275,12 +275,18 @@ section#masthead {
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100vh; }
-  @media (min-width: 900px) {
-    section#masthead img.logo {
-      width: 37vw; } }
-  @media (max-width: 899px) {
-    section#masthead img.logo {
-      width: 50vw; } }
+  @media (min-width: 40em) {
+    section#masthead img.logo-md {
+      width: 30vw; } }
+  @media (max-width: 39.9375em) {
+    section#masthead img.logo-md {
+      display: none; } }
+  @media (max-width: 39.9375em) {
+    section#masthead img.logo-sm {
+      width: 30vw; } }
+  @media (min-width: 40em) {
+    section#masthead img.logo-sm {
+      display: none; } }
   section#masthead h1.logo {
     text-transform: none;
     color: #F9AF1F;
@@ -288,10 +294,6 @@ section#masthead {
   section#masthead .brand-descrip {
     text-align: center;
     margin-top: 0.6rem; }
-  section#masthead .arrow {
-    font-size: 1.6em;
-    margin-top: 1em;
-    color: #F9AF1F; }
 
 section#servicios {
   padding-top: 8em;
