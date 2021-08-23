@@ -1,4 +1,36 @@
 section#servicios
-    padding-top: 8em
-    padding-bottom: 8em
+    padding-top: 2em
+    padding-bottom: 2em
     background-color: $theme-soft
+    color: $theme-dark2
+
+    .card-wrapper
+        //display: flex
+        //justify-content: space-evenly
+        @include breakpoint-up(medium)
+            display: grid
+            grid-template-columns: repeat(3, 1fr)
+            background-color: red
+            //flex-direction: row
+        @include breakpoint-down(small)
+            display: flex
+            flex-direction: column
+    
+        .card
+            text-align: center
+            padding: 1rem
+            &-1
+                background-color: #e1d7f0
+            &-2
+                background-color: #ecfff1
+            &-3
+                background-color: #f5dbdb
+            
+            img
+                width: 4rem
+                max-width: 100%
+
+            h3
+                font-size: 1.2rem
+                font-weight: 600
+                margin-bottom: 0.5rem

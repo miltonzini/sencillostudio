@@ -87,6 +87,33 @@ h1 {
     h1 {
       font-size: 1.125rem; } }
 
+h2.title {
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.75rem; }
+
+.btn-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .btn-wrapper .btn {
+    padding: 0.7em 1.2em;
+    font-size: 0.8em;
+    margin-top: 1em;
+    max-width: 8em;
+    border-radius: 10px;
+    border: 1px solid #383838;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease; }
+    .btn-wrapper .btn:hover {
+      color: #fff;
+      background-color: #383838; }
+
 .row {
   padding-left: 1.5em;
   padding-right: 1.5em; }
@@ -300,9 +327,42 @@ section#masthead {
     max-width: 17rem; }
 
 section#servicios {
-  padding-top: 8em;
-  padding-bottom: 8em;
-  background-color: #F9F9F9; }
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background-color: #F9F9F9;
+  color: #383838; }
+  @media (min-width: 40em) {
+    section#servicios .card-wrapper {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+      background-color: red; } }
+  @media (max-width: 39.9375em) {
+    section#servicios .card-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
+  section#servicios .card-wrapper .card {
+    text-align: center;
+    padding: 1rem; }
+    section#servicios .card-wrapper .card-1 {
+      background-color: #e1d7f0; }
+    section#servicios .card-wrapper .card-2 {
+      background-color: #ecfff1; }
+    section#servicios .card-wrapper .card-3 {
+      background-color: #f5dbdb; }
+    section#servicios .card-wrapper .card img {
+      width: 4rem;
+      max-width: 100%; }
+    section#servicios .card-wrapper .card h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem; }
 
 section#nosotros {
   padding-top: 8em;
