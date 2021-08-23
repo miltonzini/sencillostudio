@@ -1,5 +1,4 @@
 section#masthead
-    //background-color: $white // temp
     background-image: url("../img/bg/bg-plano-sipa.jpg")
     background-size: cover
     display: flex
@@ -7,27 +6,21 @@ section#masthead
     align-items: center /* align vertical */
     flex-direction: column
     height: 100vh
+    padding-left: 1.25em
+    padding-right: 1.25em
     
 
     img.logo-md
         @include breakpoint-up(medium)
-            //background-color: red
             width: 30vw
         @include breakpoint-down(small)
             display: none
     img.logo-sm
         @include breakpoint-down(small)
-            //background-color: green
             width: 30vw
         @include breakpoint-up(medium)
             display: none
 
-
-        //adapt media queries if needed
-        //@media(min-width: 900px)
-        //    width: 65vh
-        //@media(max-width: 899px)
-        //    width: 45vw
     h1.logo
         text-transform: none
         color: $theme-primary
@@ -35,4 +28,5 @@ section#masthead
     .brand-descrip
         text-align: center
         margin-top: 0.6rem
-    
+        line-height: 1.25rem
+        max-width: 17rem

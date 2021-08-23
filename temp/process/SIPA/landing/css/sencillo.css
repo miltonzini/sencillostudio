@@ -274,7 +274,9 @@ section#masthead {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: 100vh; }
+  height: 100vh;
+  padding-left: 1.25em;
+  padding-right: 1.25em; }
   @media (min-width: 40em) {
     section#masthead img.logo-md {
       width: 30vw; } }
@@ -293,7 +295,9 @@ section#masthead {
     text-align: center; }
   section#masthead .brand-descrip {
     text-align: center;
-    margin-top: 0.6rem; }
+    margin-top: 0.6rem;
+    line-height: 1.25rem;
+    max-width: 17rem; }
 
 section#servicios {
   padding-top: 8em;
