@@ -393,9 +393,10 @@ section#nosotros {
     border-color: #F9F9F9; }
 
 section#trabajos {
-  padding-top: 8em;
-  padding-bottom: 8em;
-  background-color: #F9F9F9; }
+  padding-top: 5em;
+  padding-bottom: 5em;
+  background-color: #F9F9F9;
+  color: #1E1E1E; }
 
 section#compromiso {
   padding-top: 8em;
