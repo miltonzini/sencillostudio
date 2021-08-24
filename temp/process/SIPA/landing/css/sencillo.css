@@ -69,10 +69,12 @@ html {
 
 .body {
   margin: 0;
-  padding: 0;
-  line-height: 1.3; }
+  padding: 0; }
   .body.noscroll {
     overflow: hidden; }
+
+p, h1, h2 {
+  line-height: 1.25rem; }
 
 a, a:visited, a:hover {
   text-decoration: none; }
@@ -91,7 +93,8 @@ h2.title {
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 1.75rem; }
+  font-size: 1.75em;
+  margin-bottom: 1em; }
 
 .btn-wrapper {
   display: -webkit-box;
@@ -111,8 +114,7 @@ h2.title {
     -o-transition: all 500ms ease;
     transition: all 500ms ease; }
     .btn-wrapper .btn:hover {
-      color: #fff;
-      background-color: #383838; }
+      font-weight: bold; }
 
 .row {
   padding-left: 1.5em;
@@ -327,8 +329,8 @@ section#masthead {
     max-width: 17rem; }
 
 section#servicios {
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding-top: 4em;
+  padding-bottom: 3em;
   background-color: #F9F9F9;
   color: #383838; }
   @media (min-width: 40em) {
@@ -336,8 +338,7 @@ section#servicios {
       display: -ms-grid;
       display: grid;
       -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-      background-color: red; } }
+      grid-template-columns: repeat(3, 1fr); } }
   @media (max-width: 39.9375em) {
     section#servicios .card-wrapper {
       display: -webkit-box;
@@ -350,19 +351,23 @@ section#servicios {
   section#servicios .card-wrapper .card {
     text-align: center;
     padding: 1rem; }
-    section#servicios .card-wrapper .card-1 {
-      background-color: #e1d7f0; }
-    section#servicios .card-wrapper .card-2 {
-      background-color: #ecfff1; }
-    section#servicios .card-wrapper .card-3 {
-      background-color: #f5dbdb; }
+    @media (max-width: 39.9375em) {
+      section#servicios .card-wrapper .card {
+        padding: 1.5em 0.5em; } }
     section#servicios .card-wrapper .card img {
-      width: 4rem;
+      width: 4em;
       max-width: 100%; }
+      @media (max-width: 63.9375em) {
+        section#servicios .card-wrapper .card img {
+          width: 3.5em; } }
+      @media (max-width: 39.9375em) {
+        section#servicios .card-wrapper .card img {
+          width: 3.3em; } }
     section#servicios .card-wrapper .card h3 {
       font-size: 1.2rem;
       font-weight: 600;
-      margin-bottom: 0.5rem; }
+      margin-top: 0.7rem;
+      margin-bottom: 0.7rem; }
 
 section#nosotros {
   padding-top: 8em;

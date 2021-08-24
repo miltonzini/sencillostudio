@@ -1,6 +1,6 @@
 section#servicios
-    padding-top: 2em
-    padding-bottom: 2em
+    padding-top: 4em
+    padding-bottom: 3em
     background-color: $theme-soft
     color: $theme-dark2
 
@@ -10,8 +10,6 @@ section#servicios
         @include breakpoint-up(medium)
             display: grid
             grid-template-columns: repeat(3, 1fr)
-            background-color: red
-            //flex-direction: row
         @include breakpoint-down(small)
             display: flex
             flex-direction: column
@@ -19,18 +17,25 @@ section#servicios
         .card
             text-align: center
             padding: 1rem
+            @include breakpoint-down(small)
+                padding: 1.5em 0.5em
             &-1
-                background-color: #e1d7f0
+                //background-color: #e1d7f0
             &-2
-                background-color: #ecfff1
+                //background-color: #ecfff1
             &-3
-                background-color: #f5dbdb
+                //background-color: #f5dbdb
             
             img
-                width: 4rem
+                width: 4em
                 max-width: 100%
+                @include breakpoint-down(medium)
+                    width: 3.5em
+                @include breakpoint-down(small)
+                    width: 3.3em
 
             h3
                 font-size: 1.2rem
                 font-weight: 600
-                margin-bottom: 0.5rem
+                margin-top: 0.7rem
+                margin-bottom: 0.7rem
