@@ -3603,14 +3603,8 @@
           -webkit-transition: none;
           -o-transition: none;
           transition: none; } }
-  .work .text h3 {
-    font-size: 18px;
-    font-weight: 500; }
-    .work .text h3 a {
-      color: #000; }
   .work .text span {
     font-size: 12px;
-    letter-spacing: 1px;
     color: rgba(0, 0, 0, 0.3);
     font-weight: 500; }
   .work:hover .img .icon {

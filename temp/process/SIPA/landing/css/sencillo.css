@@ -126,6 +126,28 @@ section {
   padding-left: 20px;
   padding-right: 20px; }
 
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto; }
+  @media (min-width: 576px) {
+    .wrapper {
+      max-width: 550px; } }
+  @media (min-width: 768px) {
+    .wrapper {
+      max-width: 720px; } }
+  @media (min-width: 992px) {
+    .wrapper {
+      max-width: 960px; } }
+  @media (min-width: 1200px) {
+    .wrapper {
+      max-width: 1140px; } }
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -397,8 +419,19 @@ section#trabajos {
   padding-bottom: 5em;
   background-color: #F9F9F9;
   color: #1E1E1E; }
+  section#trabajos .carousel {
+    margin-top: 3em; }
   section#trabajos .owl-carousel .owl-dots .owl-dot.active {
     background: #F9AF1F; }
+  section#trabajos .work .text {
+    text-align: center; }
+    section#trabajos .work .text h3 {
+      margin-bottom: 0.5em; }
+      section#trabajos .work .text h3 a {
+        color: #1E1E1E; }
+    section#trabajos .work .text span {
+      font-size: 1em;
+      color: #858585; }
 
 section#compromiso {
   padding-top: 8em;
