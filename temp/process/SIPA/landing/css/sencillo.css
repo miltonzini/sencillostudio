@@ -495,7 +495,6 @@ section#contact {
   padding: 110px 20px;
   background: #383838;
   color: #fff;
-  text-align: center;
   line-height: 1.3em; }
   section#contact .row {
     display: -webkit-box;
@@ -513,29 +512,43 @@ section#contact {
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column; } }
-  section#contact .brand-wrapper img {
-    width: 15em;
-    margin-bottom: 2em; }
-  section#contact .brand-wrapper p {
-    font-size: 1.2em;
-    max-width: 20em; }
+  section#contact .brand-wrapper {
+    text-align: center; }
+    @media (min-width: 64em) {
+      section#contact .brand-wrapper {
+        margin-right: 10em; } }
+    @media (min-width: 40em) {
+      section#contact .brand-wrapper {
+        margin-right: 5em; } }
+    section#contact .brand-wrapper img {
+      width: 15em;
+      margin-bottom: 2em; }
+    section#contact .brand-wrapper p {
+      font-size: 1.2em;
+      max-width: 20em; }
+  section#contact .contact-wrapper {
+    text-align: left; }
+    @media (min-width: 40em) {
+      section#contact .contact-wrapper {
+        text-align: left; } }
+    section#contact .contact-wrapper .main {
+      font-weight: 100; }
+      @media (min-width: 40em) {
+        section#contact .contact-wrapper .main .big {
+          font-size: 2.5em; } }
+      @media (max-width: 39.9375em) {
+        section#contact .contact-wrapper .main .big {
+          font-size: 1.6em; } }
   section#contact .link-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
     margin-bottom: 0.5rem; }
+    section#contact .link-wrapper * {
+      display: inline;
+      vertical-align: middle; }
     section#contact .link-wrapper svg {
       margin-right: 0.3rem;
       width: 1.5rem; }
-  section#contact .link-wrapper-whatsapp p {
-    padding-top: 0.125rem; }
+    section#contact .link-wrapper-whatsapp p {
+      padding-top: 0.125rem; }
   section#contact h2 {
     font-size: 24px;
     max-width: 29rem;

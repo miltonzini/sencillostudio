@@ -2,7 +2,6 @@ section#contact
     padding: 110px 20px
     background: $theme-dark2
     color: $white
-    text-align: center
     line-height: 1.3em
 
     .row
@@ -13,6 +12,11 @@ section#contact
             flex-direction: column
     .brand-wrapper
         //background: DarkGray
+        text-align: center
+        @include breakpoint-up(large)
+            margin-right: 10em
+        @include breakpoint-up(medium)
+            margin-right: 5em
         img
             width: 15em
             margin-bottom: 2em
@@ -22,21 +26,35 @@ section#contact
 
     .contact-wrapper
         //background: DarkKhaki
-    
+        text-align: left
+        @include breakpoint-up(medium)
+            text-align: left
+
+        .main
+            font-weight: 100
+            .big
+                @include breakpoint-up(medium)
+                    font-size: 2.5em
+                @include breakpoint-down(small)
+                    font-size: 1.6em
+        .partner
+            //background-color: DarkGray
 
     .link-wrapper
-        display: flex
-        flex-direction: row
-        justify-content: center
+        //display: flex
+        //flex-direction: row
+        //justify-content: center
+        * 
+            display: inline
+            vertical-align: middle
         margin-bottom: 0.5rem
         svg
             margin-right: 0.3rem
             width: 1.5rem //24px
     
-    .link-wrapper-whatsapp
-        p
-            padding-top: 0.125rem //2px
-
+        &-whatsapp
+            p
+                padding-top: 0.125rem //2px
 
     h2
         font-size: 24px
