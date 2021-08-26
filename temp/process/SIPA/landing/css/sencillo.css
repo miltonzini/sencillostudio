@@ -397,6 +397,8 @@ section#trabajos {
   padding-bottom: 5em;
   background-color: #F9F9F9;
   color: #1E1E1E; }
+  section#trabajos .owl-carousel .owl-dots .owl-dot.active {
+    background: #F9AF1F; }
 
 section#compromiso {
   padding-top: 8em;
