@@ -418,7 +418,7 @@ section#trabajos {
   padding-top: 5em;
   padding-bottom: 5em;
   background-color: #F9F9F9;
-  color: #1E1E1E; }
+  color: #383838; }
   section#trabajos .carousel {
     margin-top: 3em; }
   section#trabajos .owl-carousel .owl-dots .owl-dot.active {
@@ -455,7 +455,36 @@ section#compromiso {
 section#clientes {
   padding-top: 8em;
   padding-bottom: 8em;
-  background-color: #F9F9F9; }
+  background-color: #F9F9F9;
+  color: #383838; }
+  section#clientes .client-logos-wrapper {
+    text-align: center; }
+    @media (max-width: 39.9375em) {
+      section#clientes .client-logos-wrapper {
+        margin-top: 2.5em; } }
+    @media (min-width: 64em) {
+      section#clientes .client-logos-wrapper .newline {
+        display: block; } }
+    @media (max-width: 63.9375em) {
+      section#clientes .client-logos-wrapper .newline {
+        display: none; } }
+    section#clientes .client-logos-wrapper img {
+      margin: 1.5em; }
+      @media (max-width: 39.9375em) {
+        section#clientes .client-logos-wrapper img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto; } }
+      section#clientes .client-logos-wrapper img.horizontal {
+        height: 3.4em; }
+      section#clientes .client-logos-wrapper img.square {
+        height: 5em; }
+  section#clientes p.final {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 2em;
+    color: #383838;
+    font-weight: bold; }
 
 section#mapa {
   padding-top: 8em;
