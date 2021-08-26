@@ -434,10 +434,23 @@ section#trabajos {
       color: #858585; }
 
 section#compromiso {
-  padding-top: 8em;
-  padding-bottom: 8em;
+  padding-top: 6em;
+  padding-bottom: 6em;
   background-color: #F9AF1F;
   color: #F9F9F9; }
+  section#compromiso p {
+    color: #F9F9F9;
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1.5em; }
+    @media (max-width: 39.9375em) {
+      section#compromiso p {
+        text-align: center; } }
+    @media (min-width: 40em) {
+      section#compromiso p {
+        padding-right: 5em;
+        max-width: 50em;
+        text-align: left; } }
 
 section#clientes {
   padding-top: 8em;
