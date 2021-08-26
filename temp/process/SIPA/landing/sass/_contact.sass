@@ -1,9 +1,27 @@
 section#contact
     padding: 110px 20px
-    background: $white
-    color: $theme-dark
+    background: $theme-dark2
+    color: $white
     text-align: center
     line-height: 1.3em
+
+    .row
+        display: flex
+        @include breakpoint-up(medium)
+            flex-direction: row
+        @include breakpoint-down(small)
+            flex-direction: column
+    .brand-wrapper
+        //background: DarkGray
+        img
+            width: 15em
+            margin-bottom: 2em
+        p
+            font-size: 1.2em
+            max-width: 20em
+
+    .contact-wrapper
+        //background: DarkKhaki
     
 
     .link-wrapper

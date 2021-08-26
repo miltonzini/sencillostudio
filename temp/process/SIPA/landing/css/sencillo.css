@@ -493,10 +493,32 @@ section#mapa {
 
 section#contact {
   padding: 110px 20px;
-  background: #fff;
-  color: #1E1E1E;
+  background: #383838;
+  color: #fff;
   text-align: center;
   line-height: 1.3em; }
+  section#contact .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    @media (min-width: 40em) {
+      section#contact .row {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row; } }
+    @media (max-width: 39.9375em) {
+      section#contact .row {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; } }
+  section#contact .brand-wrapper img {
+    width: 15em;
+    margin-bottom: 2em; }
+  section#contact .brand-wrapper p {
+    font-size: 1.2em;
+    max-width: 20em; }
   section#contact .link-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
