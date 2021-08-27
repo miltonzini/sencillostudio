@@ -1,60 +1,76 @@
 section#contact
-    padding: 110px 20px
+    padding-top: 6em
+    padding-bottom: 4em
     background: $theme-dark2
     color: $white
     line-height: 1.3em
 
     .row
         display: flex
-        @include breakpoint-up(medium)
-            flex-direction: row
-        @include breakpoint-down(small)
+        @media (max-width: 812px) 
             flex-direction: column
+        @media (min-width: 813px) 
+            flex-direction: row
+
     .brand-wrapper
         //background: DarkGray
         text-align: center
         @include breakpoint-up(large)
             margin-right: 10em
         @include breakpoint-up(medium)
-            margin-right: 5em
+            margin-right: 2.5em
         img
             width: 15em
             margin-bottom: 2em
         p
             font-size: 1.2em
             max-width: 20em
+            @media (max-width: 812px)
+                margin-bottom: 1.5em
 
     .contact-wrapper
         //background: DarkKhaki
-        text-align: left
-        @include breakpoint-up(medium)
-            text-align: left
 
         .main
             font-weight: 100
+            svg.big
+                width: 2.1rem //24px
+            
+            @media (max-width: 812px) 
+                text-align: center
+                margin-bottom: 2.5em
+            @media (min-width: 813px) 
+                text-align: left
             .big
-                @include breakpoint-up(medium)
+                @include breakpoint-up(large)
                     font-size: 2.5em
+                @include breakpoint-up(medium)
+                    font-size: 2em
                 @include breakpoint-down(small)
                     font-size: 1.6em
+                    
         .partner
             //background-color: DarkGray
+            margin-top: 1.5em
+            margin-bottom: 1.5em
+            svg
+                width: 1.3rem
+            h3
+                margin-bottom: 0.3em
+                font-weight: bold
+
 
     .link-wrapper
-        //display: flex
-        //flex-direction: row
-        //justify-content: center
+        margin-bottom: 0.3em
         * 
             display: inline
             vertical-align: middle
-        margin-bottom: 0.5rem
         svg
             margin-right: 0.3rem
-            width: 1.5rem //24px
+            alignment-baseline: central
     
         &-whatsapp
-            p
-                padding-top: 0.125rem //2px
+            // for fixig particular alignment issues
 
     h2
         font-size: 24px
