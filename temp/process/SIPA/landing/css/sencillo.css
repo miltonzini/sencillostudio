@@ -487,9 +487,10 @@ section#clientes {
     font-weight: bold; }
 
 section#mapa {
-  padding-top: 8em;
-  padding-bottom: 8em;
-  background-color: #d2d3d4; }
+  background-color: #d2d3d4;
+  height: 20em; }
+  section#mapa iframe {
+    border: 5px red solid; }
 
 section#contact {
   padding-top: 6em;
