@@ -3,6 +3,7 @@ section#masthead
     display: flex
     justify-content: center /* align horizontal */
     align-items: center /* align vertical */
+    flex-direction: column
     height: 100vh
 
     .img-container
@@ -14,3 +15,22 @@ section#masthead
             width: 37vw
         @media(max-width: 899px)
             width: 50vw
+    
+    .brand-descrip
+        font-size: 1.25em
+        text-align: center
+        margin-top: 0.6rem
+        line-height: 1.25rem
+        max-width: 19rem
+        letter-spacing: 0.15em
+        @media (max-width: 299px)
+            font-size: 0.8em
+            letter-spacing: 0.1em
+        @media (min-width: 300px) and (max-width: 499px)
+            font-size: 0.9em
+        @media (min-width: 500px) and (max-width: 899px)
+            font-size: 1.15em
+        span.soluciones
+            animation: 1.5s fade-in
+        span.digitales
+            animation: 3.5s fade-in
