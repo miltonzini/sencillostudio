@@ -53,4 +53,22 @@ section#masthead
             left: 2em
             bottom: 2em
             //transform: scale(30%)
-            animation: shape-1 15s linear infinite
+            @include breakpoint-up(medium)
+                animation: shape-1-lg 15s linear infinite
+            @include breakpoint-down(small)
+                animation: shape-1-sm 15s linear infinite
+        .diamond-1
+            right: -100px
+            bottom: 1em
+            @include breakpoint-up(medium)
+                animation: shape-2-lg 10s linear infinite
+            @include breakpoint-down(small)
+                animation: shape-2-sm 8s linear infinite
+        .diamond-2
+            right: -100px
+            bottom: 1em
+            transform: scale(20%)
+            @include breakpoint-up(medium)
+                animation: shape-3-lg 9s linear infinite
+            @include breakpoint-down(small)
+                animation: shape-3-sm 12s linear infinite
