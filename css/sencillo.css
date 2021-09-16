@@ -54,6 +54,264 @@
   -webkit-animation: fade-out 300ms ease-in-out forwards;
   animation: fade-out 300ms ease-in-out forwards; }
 
+@-webkit-keyframes shape-1-lg {
+  from {
+    top: 500px;
+    left: -10px;
+    -webkit-transform: scale(20%);
+    transform: scale(20%);
+    opacity: 45%; }
+  50% {
+    top: -10px;
+    left: 500px;
+    -webkit-transform: scale(60%);
+    transform: scale(60%);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    opacity: 5%; }
+  70% {
+    -webkit-transform: scale(30%);
+    transform: scale(30%);
+    opacity: 80%; }
+  99% {
+    -webkit-transform: scale(1%);
+    transform: scale(1%);
+    opacity: 10%; }
+  to {
+    top: 700px;
+    left: 1200px;
+    -webkit-transform: scale(1%);
+    transform: scale(1%);
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg); } }
+
+@keyframes shape-1-lg {
+  from {
+    top: 500px;
+    left: -10px;
+    -webkit-transform: scale(20%);
+    transform: scale(20%);
+    opacity: 45%; }
+  50% {
+    top: -10px;
+    left: 500px;
+    -webkit-transform: scale(60%);
+    transform: scale(60%);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    opacity: 5%; }
+  70% {
+    -webkit-transform: scale(30%);
+    transform: scale(30%);
+    opacity: 80%; }
+  99% {
+    -webkit-transform: scale(1%);
+    transform: scale(1%);
+    opacity: 10%; }
+  to {
+    top: 700px;
+    left: 1200px;
+    -webkit-transform: scale(1%);
+    transform: scale(1%);
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg); } }
+
+@-webkit-keyframes shape-1-sm {
+  from {
+    top: 500px;
+    left: -10px;
+    -webkit-transform: scale(20%);
+    transform: scale(20%);
+    opacity: 45%; }
+  50% {
+    top: -10px;
+    left: 200px;
+    -webkit-transform: scale(60%);
+    transform: scale(60%);
+    -webkit-transform: rotate(55deg);
+    transform: rotate(55deg);
+    opacity: 5%; }
+  85% {
+    -webkit-transform: scale(30%);
+    transform: scale(30%);
+    opacity: 80%; }
+  99% {
+    -webkit-transform: scale(1%);
+    transform: scale(1%);
+    opacity: 10%; }
+  to {
+    top: 700px;
+    left: 1200px;
+    -webkit-transform: scale(1%);
+    transform: scale(1%);
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg); } }
+
+@keyframes shape-1-sm {
+  from {
+    top: 500px;
+    left: -10px;
+    -webkit-transform: scale(20%);
+    transform: scale(20%);
+    opacity: 45%; }
+  50% {
+    top: -10px;
+    left: 200px;
+    -webkit-transform: scale(60%);
+    transform: scale(60%);
+    -webkit-transform: rotate(55deg);
+    transform: rotate(55deg);
+    opacity: 5%; }
+  85% {
+    -webkit-transform: scale(30%);
+    transform: scale(30%);
+    opacity: 80%; }
+  99% {
+    -webkit-transform: scale(1%);
+    transform: scale(1%);
+    opacity: 10%; }
+  to {
+    top: 700px;
+    left: 1200px;
+    -webkit-transform: scale(1%);
+    transform: scale(1%);
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg); } }
+
+@-webkit-keyframes shape-2-lg {
+  from {
+    right: -50px;
+    opacity: 10%; }
+  30% {
+    opacity: 40%; }
+  60% {
+    opacity: 20%; }
+  to {
+    right: 1500px;
+    opacity: 2%;
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg); } }
+
+@keyframes shape-2-lg {
+  from {
+    right: -50px;
+    opacity: 10%; }
+  30% {
+    opacity: 40%; }
+  60% {
+    opacity: 20%; }
+  to {
+    right: 1500px;
+    opacity: 2%;
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg); } }
+
+@-webkit-keyframes shape-2-sm {
+  from {
+    right: -50px;
+    -webkit-transform: scale(80%);
+    transform: scale(80%);
+    opacity: 1%;
+    -webkit-transform: rotate(-60deg);
+    transform: rotate(-60deg); }
+  30% {
+    opacity: 40%; }
+  60% {
+    opacity: 20%; }
+  99% {
+    -webkit-transform: scale(10%);
+    transform: scale(10%); }
+  to {
+    -webkit-transform: scale(8%);
+    transform: scale(8%);
+    right: 500px;
+    opacity: 2%;
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg); } }
+
+@keyframes shape-2-sm {
+  from {
+    right: -50px;
+    -webkit-transform: scale(80%);
+    transform: scale(80%);
+    opacity: 1%;
+    -webkit-transform: rotate(-60deg);
+    transform: rotate(-60deg); }
+  30% {
+    opacity: 40%; }
+  60% {
+    opacity: 20%; }
+  99% {
+    -webkit-transform: scale(10%);
+    transform: scale(10%); }
+  to {
+    -webkit-transform: scale(8%);
+    transform: scale(8%);
+    right: 500px;
+    opacity: 2%;
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg); } }
+
+@-webkit-keyframes shape-3-lg {
+  from {
+    right: -50px;
+    bottom: 500px;
+    opacity: 10%; }
+  30% {
+    opacity: 40%; }
+  60% {
+    opacity: 60%; }
+  to {
+    right: 1500px;
+    opacity: 2%;
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg); } }
+
+@keyframes shape-3-lg {
+  from {
+    right: -50px;
+    bottom: 500px;
+    opacity: 10%; }
+  30% {
+    opacity: 40%; }
+  60% {
+    opacity: 60%; }
+  to {
+    right: 1500px;
+    opacity: 2%;
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg); } }
+
+@-webkit-keyframes shape-3-sm {
+  from {
+    right: -50px;
+    bottom: 500px;
+    opacity: 10%; }
+  30% {
+    opacity: 25%; }
+  60% {
+    opacity: 40%; }
+  to {
+    right: 500px;
+    opacity: 2%;
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg); } }
+
+@keyframes shape-3-sm {
+  from {
+    right: -50px;
+    bottom: 500px;
+    opacity: 10%; }
+  30% {
+    opacity: 25%; }
+  60% {
+    opacity: 40%; }
+  to {
+    right: 500px;
+    opacity: 2%;
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg); } }
+
 * {
   margin: 0;
   padding: 0;
@@ -262,22 +520,28 @@ section#masthead {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: 100vh; }
+  height: 100vh;
+  overflow: hidden;
+  position: relative; }
   section#masthead .img-container {
-    /*background-color: pink*/ }
-  @media (min-width: 900px) {
-    section#masthead img.logo, section#masthead svg.logo {
-      width: 37vw; } }
-  @media (max-width: 899px) {
-    section#masthead img.logo, section#masthead svg.logo {
-      width: 50vw; } }
+    /*background-color: pink*/
+    z-index: 3; }
+  section#masthead img.logo, section#masthead svg.logo {
+    z-index: 3; }
+    @media (min-width: 900px) {
+      section#masthead img.logo, section#masthead svg.logo {
+        width: 37vw; } }
+    @media (max-width: 899px) {
+      section#masthead img.logo, section#masthead svg.logo {
+        width: 50vw; } }
   section#masthead .brand-descrip {
     font-size: 1.25em;
     text-align: center;
     margin-top: 0.6rem;
     line-height: 1.25rem;
     max-width: 19rem;
-    letter-spacing: 0.15em; }
+    letter-spacing: 0.15em;
+    z-index: 3; }
     @media (max-width: 299px) {
       section#masthead .brand-descrip {
         font-size: 0.8em;
@@ -294,6 +558,48 @@ section#masthead {
     section#masthead .brand-descrip span.digitales {
       -webkit-animation: 5.5s fade-in;
       animation: 5.5s fade-in; }
+  section#masthead .shapes {
+    overflow: hidden;
+    display: block; }
+    section#masthead .shapes img {
+      position: absolute;
+      z-index: 1; }
+    section#masthead .shapes .triangle-1 {
+      left: 2em;
+      bottom: 2em; }
+      @media (min-width: 40em) {
+        section#masthead .shapes .triangle-1 {
+          -webkit-animation: shape-1-lg 15s linear infinite;
+          animation: shape-1-lg 15s linear infinite; } }
+      @media (max-width: 39.9375em) {
+        section#masthead .shapes .triangle-1 {
+          -webkit-animation: shape-1-sm 15s linear infinite;
+          animation: shape-1-sm 15s linear infinite; } }
+    section#masthead .shapes .diamond-1 {
+      right: -100px;
+      bottom: 1em; }
+      @media (min-width: 40em) {
+        section#masthead .shapes .diamond-1 {
+          -webkit-animation: shape-2-lg 13s linear infinite;
+          animation: shape-2-lg 13s linear infinite; } }
+      @media (max-width: 39.9375em) {
+        section#masthead .shapes .diamond-1 {
+          -webkit-animation: shape-2-sm 8s linear infinite;
+          animation: shape-2-sm 8s linear infinite; } }
+    section#masthead .shapes .diamond-2 {
+      right: -100px;
+      bottom: 1em;
+      -webkit-transform: scale(20%);
+      -ms-transform: scale(20%);
+      transform: scale(20%); }
+      @media (min-width: 40em) {
+        section#masthead .shapes .diamond-2 {
+          -webkit-animation: shape-3-lg 20s linear infinite;
+          animation: shape-3-lg 20s linear infinite; } }
+      @media (max-width: 39.9375em) {
+        section#masthead .shapes .diamond-2 {
+          -webkit-animation: shape-3-sm 12s linear infinite;
+          animation: shape-3-sm 12s linear infinite; } }
 
 section#hola {
   height: 90vh;

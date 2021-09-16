@@ -28,3 +28,112 @@
 
 .fade-out
     animation: fade-out 300ms ease-in-out forwards
+
+// shapes
+@keyframes shape-1-lg
+    from
+        top: 500px
+        left: -10px
+        transform: scale(20%)
+        opacity: 45%
+    50%
+        top: -10px
+        left: 500px
+        transform: scale(60%)
+        transform: rotate(30deg)
+        opacity: 5%
+    70%
+        transform: scale(30%)
+        opacity: 80%
+    99%
+        transform: scale(1%)
+        opacity: 10%
+    to
+        top: 700px
+        left: 1200px
+        transform: scale(1%)
+        transform: rotate(60deg)
+
+@keyframes shape-1-sm
+    from
+        top: 500px
+        left: -10px
+        transform: scale(20%)
+        opacity: 45%
+    50%
+        top: -10px
+        left: 200px
+        transform: scale(60%)
+        transform: rotate(55deg)
+        opacity: 5%
+    85%
+        transform: scale(30%)
+        opacity: 80%
+    99%
+        transform: scale(1%)
+        opacity: 10%
+    to
+        top: 700px
+        left: 1200px
+        transform: scale(1%)
+        transform: rotate(60deg)
+
+@keyframes shape-2-lg
+    from
+        right: -50px
+        opacity: 10%
+    30%  
+        opacity: 40%
+    60%
+        opacity: 20%
+    to
+        right: 1500px
+        opacity: 2%
+        transform: rotate(60deg)
+
+@keyframes shape-2-sm
+    from
+        right: -50px
+        transform: scale(80%)
+        opacity: 1%
+        transform: rotate(-60deg)
+    30%  
+        opacity: 40%
+    60%
+        opacity: 20%
+        //transform: rotate(-20deg)
+    99%
+        transform: scale(10%)
+    to
+        transform: scale(8%)
+        right: 500px
+        opacity: 2%
+        transform: rotate(60deg)
+
+@keyframes shape-3-lg
+    from
+        right: -50px
+        bottom: 500px
+        opacity: 10%
+    30%  
+        opacity: 40%
+    60%
+        opacity: 60%
+    to
+        right: 1500px
+        opacity: 2%
+        transform: rotate(60deg)
+
+@keyframes shape-3-sm
+    from
+        right: -50px
+        bottom: 500px
+        opacity: 10%
+    30%  
+        opacity: 25%
+    60%
+        opacity: 40%
+    to
+        right: 500px
+        opacity: 2%
+        transform: rotate(60deg)
