@@ -258,15 +258,42 @@ section#masthead {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   height: 100vh; }
   section#masthead .img-container {
     /*background-color: pink*/ }
   @media (min-width: 900px) {
-    section#masthead img.logo {
-      width: 40vw; } }
+    section#masthead img.logo, section#masthead svg.logo {
+      width: 37vw; } }
   @media (max-width: 899px) {
-    section#masthead img.logo {
+    section#masthead img.logo, section#masthead svg.logo {
       width: 50vw; } }
+  section#masthead .brand-descrip {
+    font-size: 1.25em;
+    text-align: center;
+    margin-top: 0.6rem;
+    line-height: 1.25rem;
+    max-width: 19rem;
+    letter-spacing: 0.15em; }
+    @media (max-width: 299px) {
+      section#masthead .brand-descrip {
+        font-size: 0.8em;
+        letter-spacing: 0.1em; } }
+    @media (min-width: 300px) and (max-width: 499px) {
+      section#masthead .brand-descrip {
+        font-size: 0.9em; } }
+    @media (min-width: 500px) and (max-width: 899px) {
+      section#masthead .brand-descrip {
+        font-size: 1.15em; } }
+    section#masthead .brand-descrip span.soluciones {
+      -webkit-animation: 3s fade-in;
+      animation: 3s fade-in; }
+    section#masthead .brand-descrip span.digitales {
+      -webkit-animation: 5.5s fade-in;
+      animation: 5.5s fade-in; }
 
 section#hola {
   height: 90vh;
