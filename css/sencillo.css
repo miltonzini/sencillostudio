@@ -571,23 +571,23 @@ section#masthead {
       bottom: 2em; }
       @media (min-width: 40em) {
         section#masthead .shapes .triangle-1 {
-          -webkit-animation: shape-1-lg 15s linear infinite;
-          animation: shape-1-lg 15s linear infinite; } }
+          -webkit-animation: shape-1-lg 22s linear infinite;
+          animation: shape-1-lg 22s linear infinite; } }
       @media (max-width: 39.9375em) {
         section#masthead .shapes .triangle-1 {
-          -webkit-animation: shape-1-sm 15s linear infinite;
-          animation: shape-1-sm 15s linear infinite; } }
+          -webkit-animation: shape-1-sm 22s linear infinite;
+          animation: shape-1-sm 22s linear infinite; } }
     section#masthead .shapes .diamond-1 {
       right: -100px;
       bottom: 1em; }
       @media (min-width: 40em) {
         section#masthead .shapes .diamond-1 {
-          -webkit-animation: shape-2-lg 13s linear infinite;
-          animation: shape-2-lg 13s linear infinite; } }
+          -webkit-animation: shape-2-lg 15s linear infinite;
+          animation: shape-2-lg 15s linear infinite; } }
       @media (max-width: 39.9375em) {
         section#masthead .shapes .diamond-1 {
-          -webkit-animation: shape-2-sm 8s linear infinite;
-          animation: shape-2-sm 8s linear infinite; } }
+          -webkit-animation: shape-2-sm 10s linear infinite;
+          animation: shape-2-sm 10s linear infinite; } }
     section#masthead .shapes .diamond-2 {
       right: -100px;
       bottom: 1em;
@@ -596,12 +596,12 @@ section#masthead {
       transform: scale(20%); }
       @media (min-width: 40em) {
         section#masthead .shapes .diamond-2 {
-          -webkit-animation: shape-3-lg 20s linear infinite;
-          animation: shape-3-lg 20s linear infinite; } }
+          -webkit-animation: shape-3-lg 25s linear infinite;
+          animation: shape-3-lg 25s linear infinite; } }
       @media (max-width: 39.9375em) {
         section#masthead .shapes .diamond-2 {
-          -webkit-animation: shape-3-sm 12s linear infinite;
-          animation: shape-3-sm 12s linear infinite; } }
+          -webkit-animation: shape-3-sm 20s linear infinite;
+          animation: shape-3-sm 20s linear infinite; } }
 
 section#hola {
   height: 90vh;
