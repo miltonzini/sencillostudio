@@ -420,6 +420,8 @@ section#servicios {
           -webkit-box-pack: start;
           -ms-flex-pack: start;
           justify-content: flex-start; } }
+    section#servicios .card-wrapper .card .info-wrapper p {
+      line-height: 1.5; }
     section#servicios .card-wrapper .card h3 {
       font-size: 1.2rem;
       font-weight: 600;
