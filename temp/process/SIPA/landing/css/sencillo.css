@@ -350,15 +350,18 @@ section#masthead {
 
 section#servicios {
   padding-top: 4em;
-  padding-bottom: 3em;
+  padding-bottom: 4em;
   background-color: #F9F9F9;
   color: #383838; }
   @media (min-width: 40em) {
     section#servicios .card-wrapper {
-      display: -ms-grid;
-      display: grid;
-      -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr); } }
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
   @media (max-width: 39.9375em) {
     section#servicios .card-wrapper {
       display: -webkit-box;
@@ -369,20 +372,54 @@ section#servicios {
       -ms-flex-direction: column;
       flex-direction: column; } }
   section#servicios .card-wrapper .card {
+    background: white;
+    margin: 0.6em;
     text-align: center;
-    padding: 1rem; }
+    padding: 3rem 1.5rem;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    section#servicios .card-wrapper .card:hover {
+      -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
     @media (max-width: 39.9375em) {
       section#servicios .card-wrapper .card {
-        padding: 1.5em 0.5em; } }
+        padding: 1.5em 1.2em; } }
+    @media (min-width: 40em) {
+      section#servicios .card-wrapper .card {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        width: 35em;
+        padding: 1.2em 1.2em 1.2em 1.2em; } }
+    @media (min-width: 40em) {
+      section#servicios .card-wrapper .card .img-wrapper {
+        min-width: 5.5rem; } }
     section#servicios .card-wrapper .card img {
       width: 4em;
       max-width: 100%; }
-      @media (max-width: 63.9375em) {
+      @media (min-width: 40em) {
         section#servicios .card-wrapper .card img {
-          width: 3.5em; } }
+          width: 4.5em;
+          margin-top: 0.8em; } }
       @media (max-width: 39.9375em) {
         section#servicios .card-wrapper .card img {
           width: 3.3em; } }
+    @media (min-width: 40em) {
+      section#servicios .card-wrapper .card .info-wrapper {
+        text-align: left;
+        padding-left: 1em; }
+        section#servicios .card-wrapper .card .info-wrapper .btn-wrapper {
+          margin-top: 0.5em;
+          -webkit-box-pack: start;
+          -ms-flex-pack: start;
+          justify-content: flex-start; } }
     section#servicios .card-wrapper .card h3 {
       font-size: 1.2rem;
       font-weight: 600;
