@@ -630,3 +630,25 @@ section.footer {
   color: white; }
   section.footer p {
     text-align: center; }
+
+section#header-industrial {
+  background-image: url("../img/headers/sipa-trabajos-techos.jpg");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 20em;
+  padding-left: 1.25em;
+  padding-right: 1.25em; }
+  section#header-industrial img.logo {
+    width: 30vw; }
