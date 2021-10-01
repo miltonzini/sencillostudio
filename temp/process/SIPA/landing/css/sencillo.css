@@ -226,7 +226,7 @@ section {
 .header .overlay {
   opacity: 0;
   position: fixed;
-  top: 3.1875rem;
+  top: 2.9rem;
   right: 0;
   bottom: 0;
   left: 0;
@@ -632,23 +632,86 @@ section.footer {
     text-align: center; }
 
 section#header-industrial {
+  margin-top: 2.9rem;
   background-image: url("../img/headers/sipa-trabajos-techos.jpg");
   background-size: cover;
+  min-height: 20em;
+  padding-left: 1.25em;
+  padding-right: 1.25em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
-  height: 20em;
-  padding-left: 1.25em;
-  padding-right: 1.25em; }
-  section#header-industrial img.logo {
-    width: 30vw; }
+  flex-direction: column; }
+  section#header-industrial .wrapper {
+    padding: 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    @media (min-width: 64em) {
+      section#header-industrial .wrapper {
+        max-width: 50em; } }
+    @media (max-width: 63.9375em) {
+      section#header-industrial .wrapper {
+        max-width: 40em; } }
+    @media (min-width: 40em) {
+      section#header-industrial .wrapper {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row; } }
+    @media (max-width: 39.9375em) {
+      section#header-industrial .wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-top: 3em;
+        padding-bottom: 3em; } }
+  @media (max-width: 39.9375em) {
+    section#header-industrial img.logo {
+      width: 9em; } }
+  @media (min-width: 40em) {
+    section#header-industrial img.logo {
+      width: 12em; } }
+  @media (min-width: 64em) {
+    section#header-industrial img.logo {
+      width: 17em; } }
+  section#header-industrial .logo-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    @media (min-width: 40em) {
+      section#header-industrial .logo-wrapper {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; } }
+    @media (max-width: 39.9375em) {
+      section#header-industrial .logo-wrapper {
+        -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+        justify-content: center !important; } }
+  section#header-industrial .text-wrapper {
+    color: #F9F9F9; }
+    @media (min-width: 40em) {
+      section#header-industrial .text-wrapper {
+        padding-left: 2em; } }
+    @media (max-width: 39.9375em) {
+      section#header-industrial .text-wrapper {
+        padding-top: 1em;
+        text-align: center; } }
+    section#header-industrial .text-wrapper .header-title {
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-bottom: 0.2em; }
+    section#header-industrial .text-wrapper .category-title {
+      font-weight: bold;
+      margin-bottom: 0.4em;
+      font-size: 2em; }
+    section#header-industrial .text-wrapper .category-descrip {
+      font-size: 1.2em; }
