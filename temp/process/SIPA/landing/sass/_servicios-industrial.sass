@@ -2,14 +2,15 @@ section#header-industrial
     margin-top: 2.9rem
     background-image: url("../img/headers/sipa-trabajos-techos.jpg")
     background-size: cover
-    //background-position-y: -850px
-    min-height: 20em
     padding-left: 1.25em
     padding-right: 1.25em
     display: flex
     justify-content: center /* align horizontally */
-    //align-items: center /* align vertically */
     flex-direction: column
+    @include breakpoint-up(medium)
+        min-height: 20em
+    @include breakpoint-down(small)
+        min-height: 25em
 
     .wrapper
         //background: pink
@@ -50,6 +51,7 @@ section#header-industrial
         @include breakpoint-up(medium)
             padding-left: 2em
         @include breakpoint-down(small)
+            font-size: 14px
             padding-top: 1em
             text-align: center
         .header-title
@@ -59,6 +61,6 @@ section#header-industrial
         .category-title
             font-weight: bold
             margin-bottom: 0.4em
-            font-size: 2em
+            font-size: 1.8em
         .category-descrip
             font-size: 1.2em

@@ -635,7 +635,6 @@ section#header-industrial {
   margin-top: 2.9rem;
   background-image: url("../img/headers/sipa-trabajos-techos.jpg");
   background-size: cover;
-  min-height: 20em;
   padding-left: 1.25em;
   padding-right: 1.25em;
   display: -webkit-box;
@@ -648,6 +647,12 @@ section#header-industrial {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column; }
+  @media (min-width: 40em) {
+    section#header-industrial {
+      min-height: 20em; } }
+  @media (max-width: 39.9375em) {
+    section#header-industrial {
+      min-height: 25em; } }
   section#header-industrial .wrapper {
     padding: 1em;
     display: -webkit-box;
@@ -703,6 +708,7 @@ section#header-industrial {
         padding-left: 2em; } }
     @media (max-width: 39.9375em) {
       section#header-industrial .text-wrapper {
+        font-size: 14px;
         padding-top: 1em;
         text-align: center; } }
     section#header-industrial .text-wrapper .header-title {
@@ -712,6 +718,6 @@ section#header-industrial {
     section#header-industrial .text-wrapper .category-title {
       font-weight: bold;
       margin-bottom: 0.4em;
-      font-size: 2em; }
+      font-size: 1.8em; }
     section#header-industrial .text-wrapper .category-descrip {
       font-size: 1.2em; }
