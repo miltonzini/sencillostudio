@@ -396,7 +396,7 @@ section#servicios {
         -webkit-box-direction: normal;
         -ms-flex-direction: row;
         flex-direction: row;
-        width: 35em;
+        width: 37.2em;
         padding: 1.2em 1.2em 1.2em 1.2em; } }
     @media (min-width: 40em) {
       section#servicios .card-wrapper .card .img-wrapper {
