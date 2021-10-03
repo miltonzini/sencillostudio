@@ -4,3 +4,63 @@ body.servicios
         padding-bottom: 4em
         background-color: $theme-soft
         color: $theme-dark2
+        @include breakpoint-up(medium)
+            text-align: left
+        @include breakpoint-down(small)
+            text-align: center
+        
+
+        h2.title
+            text-transform: none
+            color: $theme-dark
+            @include breakpoint-up(medium)
+                text-align: left
+            @include breakpoint-down(small)
+                text-align: center
+
+        p
+            font-size: 1.2em
+            font-weight: 100            
+            line-height: 1.5em
+            margin-bottom: 1em
+        
+        img
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
+            &.main   
+                @media (max-width: 622px)
+                    margin-bottom: 1em
+                    width: 11em
+                @media (min-width: 623px) and (max-width: 750px)
+                    margin-left: 1em
+                    margin-bottom: 1em
+                    width: 12em
+                @media (min-width: 751px) and (max-width: 974px)
+                    margin-left: 1em
+                @media (min-width: 975px)
+                    margin-left: 1em
+                    width: 18em
+                            
+                &-right
+                    float: right
+                    @include breakpoint-down(small)
+                        display: none
+
+                &-center
+                    @include breakpoint-up(medium)
+                        display: none
+
+        .photo-wrapper
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-wrap: wrap
+            padding-top: 3em
+            padding-bottom: 3em
+            @include breakpoint-up(medium)
+                flex-direction: row
+            @include breakpoint-down(small)
+                flex-direction: column
+            
+            img
+                max-width: 16em
+                margin: 1em
