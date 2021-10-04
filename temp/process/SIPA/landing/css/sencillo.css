@@ -403,6 +403,10 @@ section#servicios {
   padding-top: 4em;
   padding-bottom: 4em;
   background-color: #F9F9F9;
+  background: -webkit-gradient(linear, left bottom, left top, from(#f7f7f7), to(#fcfcfc));
+  background: -webkit-linear-gradient(bottom, #f7f7f7 0%, #fcfcfc 100%);
+  background: -o-linear-gradient(bottom, #f7f7f7 0%, #fcfcfc 100%);
+  background: linear-gradient(0deg, #f7f7f7 0%, #fcfcfc 100%);
   color: #383838; }
   @media (min-width: 40em) {
     section#servicios .card-wrapper {
@@ -780,6 +784,10 @@ body.servicios section#descripcion {
   padding-top: 4em;
   padding-bottom: 4em;
   background-color: #F9F9F9;
+  background: -webkit-gradient(linear, left bottom, left top, from(#f7f7f7), to(#fcfcfc));
+  background: -webkit-linear-gradient(bottom, #f7f7f7 0%, #fcfcfc 100%);
+  background: -o-linear-gradient(bottom, #f7f7f7 0%, #fcfcfc 100%);
+  background: linear-gradient(0deg, #f7f7f7 0%, #fcfcfc 100%);
   color: #383838; }
   @media (min-width: 40em) {
     body.servicios section#descripcion {
