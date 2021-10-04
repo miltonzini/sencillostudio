@@ -865,9 +865,3 @@ body.servicios section#descripcion {
     body.servicios section#descripcion .photo-wrapper img {
       max-width: 16em;
       margin: 1em; }
-  body.servicios section#descripcion .btn {
-    color: #383838;
-    border: none;
-    background-color: #fde4b4;
-    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
