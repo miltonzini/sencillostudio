@@ -98,8 +98,25 @@ h2.title {
   text-align: center;
   font-weight: 600;
   text-transform: uppercase;
-  font-size: 1.75em;
   margin-bottom: 1em; }
+  @media (min-width: 40em) {
+    h2.title {
+      font-size: 1.75em; } }
+  @media (max-width: 39.9375em) {
+    h2.title {
+      font-size: 1.56em; } }
+
+h3.subtitle {
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 1em; }
+  @media (min-width: 40em) {
+    h3.subtitle {
+      font-size: 1.5em; } }
+  @media (max-width: 39.9375em) {
+    h3.subtitle {
+      font-size: 1.4em; } }
 
 .btn-wrapper {
   display: -webkit-box;
@@ -217,6 +234,28 @@ section {
   color: black;
   text-decoration: none;
   cursor: pointer; }
+
+ul {
+  list-style: none;
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  text-align: left !important; }
+
+li {
+  margin: 0.25rem; }
+
+li::before {
+  content: "";
+  background: #F9AF1F;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 1rem;
+  color: white;
+  text-align: center;
+  margin-right: 0.5rem;
+  margin-bottom: 0.17rem; }
 
 .header.open {
   display: block; }
@@ -744,14 +783,14 @@ body.servicios section#descripcion {
   @media (max-width: 39.9375em) {
     body.servicios section#descripcion {
       text-align: center; } }
-  body.servicios section#descripcion h2.title {
+  body.servicios section#descripcion h2.title, body.servicios section#descripcion h3.subtitle {
     text-transform: none;
     color: #1E1E1E; }
     @media (min-width: 40em) {
-      body.servicios section#descripcion h2.title {
+      body.servicios section#descripcion h2.title, body.servicios section#descripcion h3.subtitle {
         text-align: left; } }
     @media (max-width: 39.9375em) {
-      body.servicios section#descripcion h2.title {
+      body.servicios section#descripcion h2.title, body.servicios section#descripcion h3.subtitle {
         text-align: center; } }
   body.servicios section#descripcion p {
     font-size: 1.2em;

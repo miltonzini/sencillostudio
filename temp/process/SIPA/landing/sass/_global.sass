@@ -43,8 +43,21 @@ h2.title
     text-align: center
     font-weight: 600
     text-transform: uppercase
-    font-size: 1.75em
     margin-bottom: 1em
+    @include breakpoint-up(medium)
+        font-size: 1.75em
+    @include breakpoint-down(small)
+        font-size: 1.56em
+
+h3.subtitle
+    text-align: center
+    font-weight: 600
+    text-transform: uppercase
+    margin-bottom: 1em
+    @include breakpoint-up(medium)
+        font-size: 1.5em
+    @include breakpoint-down(small)
+        font-size: 1.4em
 
 .btn-wrapper
     display: flex
@@ -160,3 +173,27 @@ section
   color: black
   text-decoration: none
   cursor: pointer
+
+// lists
+ul 
+  list-style: none
+  font-size: 1.2em
+  margin-bottom: 1em
+  text-align: left!important
+
+li 
+    margin: 0.25rem
+    
+li::before 
+    content: ""
+    background: $theme-primary
+    width: 0.5rem
+    height: 0.5rem
+    border-radius: 50%
+    display: inline-block
+    line-height: 1rem
+    color: white
+    text-align: center
+    margin-right: 0.5rem
+    margin-bottom: 0.17rem
+    
