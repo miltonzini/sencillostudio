@@ -148,6 +148,8 @@ h3.subtitle {
 .row {
   padding-left: 1.5em;
   padding-right: 1.5em; }
+  .row-wide {
+    min-width: 100%; }
 
 section {
   scroll-margin-top: 51px; }
@@ -869,5 +871,8 @@ body.servicios section#descripcion {
         -ms-flex-direction: column;
         flex-direction: column; } }
     body.servicios section#descripcion .photo-wrapper img {
-      max-width: 16em;
       margin: 1em; }
+      body.servicios section#descripcion .photo-wrapper img.horizontal {
+        max-width: 16em; }
+      body.servicios section#descripcion .photo-wrapper img.vertical {
+        max-width: 16em; }
