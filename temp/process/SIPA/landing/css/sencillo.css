@@ -777,15 +777,24 @@ section#sub-header {
   section#sub-header .text-wrapper .category-descrip {
     font-size: 1.2em; }
 
-body#sector-industrial section#sub-header,
-body#sector-refrigeracion section#sub-header,
-body#sector-obra-civil section#sub-header,
+body#sector-industrial section#sub-header {
+  background-image: url("../img/headers/sipa-header-sector-industrial.jpg"); }
+  body#sector-industrial section#sub-header .text-wrapper {
+    color: #F9F9F9; }
+
+body#sector-obra-civil section#sub-header {
+  background-image: url("../img/headers/sipa-header-obra-civil.jpg"); }
+  body#sector-obra-civil section#sub-header .text-wrapper {
+    color: #F9F9F9; }
+
 body#sector-mantenimiento section#sub-header {
-  background-image: url("../img/headers/sipa-trabajos-techos.jpg"); }
-  body#sector-industrial section#sub-header .text-wrapper,
-  body#sector-refrigeracion section#sub-header .text-wrapper,
-  body#sector-obra-civil section#sub-header .text-wrapper,
+  background-image: url("../img/headers/sipa-header-mantenimiento.jpg"); }
   body#sector-mantenimiento section#sub-header .text-wrapper {
+    color: #F9F9F9; }
+
+body#sector-refrigeracion section#sub-header {
+  background-image: url("../img/headers/sipa-header-refrigeracion.jpg"); }
+  body#sector-refrigeracion section#sub-header .text-wrapper {
     color: #F9F9F9; }
 
 body.servicios section#descripcion {
