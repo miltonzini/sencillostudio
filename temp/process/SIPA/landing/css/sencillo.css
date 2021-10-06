@@ -778,22 +778,22 @@ section#sub-header {
     font-size: 1.2em; }
 
 body#sector-industrial section#sub-header {
-  background-image: url("../img/headers/sipa-header-sector-industrial.jpg"); }
+  background-image: url("../img/headers/sipa-header-sector-industrial-faded.jpg"); }
   body#sector-industrial section#sub-header .text-wrapper {
     color: #F9F9F9; }
 
 body#sector-obra-civil section#sub-header {
-  background-image: url("../img/headers/sipa-header-obra-civil.jpg"); }
+  background-image: url("../img/headers/sipa-header-obra-civil-faded.jpg"); }
   body#sector-obra-civil section#sub-header .text-wrapper {
     color: #F9F9F9; }
 
 body#sector-mantenimiento section#sub-header {
-  background-image: url("../img/headers/sipa-header-mantenimiento.jpg"); }
+  background-image: url("../img/headers/sipa-header-mantenimiento-faded.jpg"); }
   body#sector-mantenimiento section#sub-header .text-wrapper {
     color: #F9F9F9; }
 
 body#sector-refrigeracion section#sub-header {
-  background-image: url("../img/headers/sipa-header-refrigeracion.jpg"); }
+  background-image: url("../img/headers/sipa-header-refrigeracion-faded.jpg"); }
   body#sector-refrigeracion section#sub-header .text-wrapper {
     color: #F9F9F9; }
 
@@ -900,10 +900,13 @@ body.servicios section#descripcion {
         max-width: 10em; } }
     @media (min-width: 623px) and (max-width: 750px) {
       body.servicios section#descripcion .photo-wrapper img.vertical {
-        max-width: 8em !important; } }
+        max-width: 8em !important;
+        margin: 0.3em; } }
     @media (min-width: 751px) and (max-width: 974px) {
       body.servicios section#descripcion .photo-wrapper img.vertical {
-        max-width: 10em; } }
+        max-width: 10em;
+        margin: 0.5em; } }
     @media (min-width: 975px) {
       body.servicios section#descripcion .photo-wrapper img.vertical {
-        max-width: 14em; } }
+        max-width: 14em;
+        margin: 1em; } }
