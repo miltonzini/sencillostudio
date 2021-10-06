@@ -63,9 +63,26 @@ body.servicios
                 flex-direction: column
             
             img
-                margin: 1em
                 &.horizontal
-                    max-width: 16em
+                    @media (max-width: 622px)
+                        max-width: 14em
+                        margin: 1em
+                    @media (min-width: 623px) and (max-width: 750px)
+                        max-width: 10em!important
+                        margin: 0.3em!important
+                    @media (min-width: 751px) and (max-width: 974px)
+                        max-width: 15em
+                        margin: 0.5em
+                    @media (min-width: 975px)
+                        max-width: 18em
+                        margin: 1em
+
                 &.vertical
-                    max-width: 16em
-                    
+                    @media (max-width: 622px)
+                        max-width: 10em
+                    @media (min-width: 623px) and (max-width: 750px)
+                        max-width: 8em!important
+                    @media (min-width: 751px) and (max-width: 974px)
+                        max-width: 10em
+                    @media (min-width: 975px)
+                        max-width: 14em
