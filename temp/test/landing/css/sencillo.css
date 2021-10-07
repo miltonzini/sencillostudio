@@ -467,7 +467,8 @@ section {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#d2d3d4), to(transparent));
   background-image: -webkit-linear-gradient(#d2d3d4, transparent);
   background-image: -o-linear-gradient(#d2d3d4, transparent);
-  background-image: linear-gradient(#d2d3d4, transparent); }
+  background-image: linear-gradient(#d2d3d4, transparent);
+  z-index: 10000; }
 
 .header nav {
   background-color: #f3f5f4;
@@ -599,12 +600,12 @@ section#masthead {
       bottom: 2em; }
       @media (min-width: 40em) {
         section#masthead .shapes .triangle-1 {
-          -webkit-animation: shape-1-lg 18s linear infinite;
-          animation: shape-1-lg 18s linear infinite; } }
+          -webkit-animation: shape-1-lg 22s linear infinite;
+          animation: shape-1-lg 22s linear infinite; } }
       @media (max-width: 39.9375em) {
         section#masthead .shapes .triangle-1 {
-          -webkit-animation: shape-1-sm 18s linear infinite;
-          animation: shape-1-sm 18s linear infinite; } }
+          -webkit-animation: shape-1-sm 22s linear infinite;
+          animation: shape-1-sm 22s linear infinite; } }
     section#masthead .shapes .diamond-1 {
       right: -100px;
       bottom: 1em; }
@@ -628,8 +629,8 @@ section#masthead {
           animation: shape-3-lg 25s linear infinite; } }
       @media (max-width: 39.9375em) {
         section#masthead .shapes .diamond-2 {
-          -webkit-animation: shape-3-sm 12s linear infinite;
-          animation: shape-3-sm 12s linear infinite; } }
+          -webkit-animation: shape-3-sm 20s linear infinite;
+          animation: shape-3-sm 20s linear infinite; } }
 
 section#hola {
   height: 90vh;

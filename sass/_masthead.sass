@@ -1,5 +1,6 @@
 section#masthead
     background-color: $theme-soft
+    background: $soft-gradient-45
     display: flex
     justify-content: center /* align horizontal */
     align-items: center /* align vertical */
@@ -14,11 +15,11 @@ section#masthead
 
     img.logo, svg.logo
         //temp mediaqueries
-        z-index: 3
         @media(min-width: 900px)
             width: 37vw
         @media(max-width: 899px)
             width: 50vw
+        z-index: 3
     
 
     
@@ -60,7 +61,7 @@ section#masthead
             right: -100px
             bottom: 1em
             @include breakpoint-up(medium)
-                animation: shape-2-lg 15s linear infinite
+                animation: shape-2-lg 16s linear infinite
             @include breakpoint-down(small)
                 animation: shape-2-sm 10s linear infinite
         .diamond-2

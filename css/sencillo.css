@@ -346,12 +346,37 @@ h1 {
     h1 {
       font-size: 1.125rem; } }
 
+section {
+  scroll-margin-top: 51px; }
+
 .row {
   padding-left: 1.5em;
   padding-right: 1.5em; }
+  .row-wide {
+    min-width: 100%; }
 
-section {
-  scroll-margin-top: 51px; }
+.card {
+  background-color: #fff;
+  padding: 1em;
+  margin: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 18em;
+  max-width: 18rem;
+  min-width: 10rem;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), -8px -8px 31px #f9f9f9;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), -8px -8px 31px #f9f9f9;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .card:hover {
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
 
 .container {
   padding-left: 20px;
@@ -368,7 +393,9 @@ section {
   .flex-jc-c {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center; }
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
   .flex-ai-c {
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -491,8 +518,7 @@ section {
   border-radius: 5px;
   top: 4.5rem;
   right: 2rem;
-  left: 2rem;
-  z-index: 10000; }
+  left: 2rem; }
   .header__menu a {
     display: block;
     padding: 0.625rem;
@@ -509,6 +535,9 @@ section {
 
 section#masthead {
   background-color: #f3f5f4;
+  background: -webkit-linear-gradient(45deg, #f9faf9 0%, #edf0ef 100%);
+  background: -o-linear-gradient(45deg, #f9faf9 0%, #edf0ef 100%);
+  background: linear-gradient(45deg, #f9faf9 0%, #edf0ef 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -582,8 +611,8 @@ section#masthead {
       bottom: 1em; }
       @media (min-width: 40em) {
         section#masthead .shapes .diamond-1 {
-          -webkit-animation: shape-2-lg 15s linear infinite;
-          animation: shape-2-lg 15s linear infinite; } }
+          -webkit-animation: shape-2-lg 16s linear infinite;
+          animation: shape-2-lg 16s linear infinite; } }
       @media (max-width: 39.9375em) {
         section#masthead .shapes .diamond-1 {
           -webkit-animation: shape-2-sm 10s linear infinite;
@@ -673,7 +702,11 @@ section#hola {
 
 section#servicios {
   padding: 93px 20px 93px 20px;
-  background: white; }
+  background: #f3f5f4;
+  background: -webkit-gradient(linear, left bottom, left top, from(#f9faf9), to(#edf0ef));
+  background: -webkit-linear-gradient(bottom, #f9faf9 0%, #edf0ef 100%);
+  background: -o-linear-gradient(bottom, #f9faf9 0%, #edf0ef 100%);
+  background: linear-gradient(0deg, #f9faf9 0%, #edf0ef 100%); }
   section#servicios h1 {
     text-align: center;
     color: #FF5851;
@@ -694,37 +727,27 @@ section#servicios {
         align-items: center; } }
   section#servicios .servicio {
     text-align: center;
-    max-width: 15rem;
-    min-width: 10rem;
-    line-height: 1.3em;
-    margin-left: 1em;
-    margin-right: 1em; }
-    @media (max-width: 39.9375em) {
-      section#servicios .servicio {
-        margin-bottom: 3em; } }
+    line-height: 1.3em; }
     section#servicios .servicio h2 {
       font-weight: 400;
-      font-size: 1.5rem;
+      font-size: 1.25rem;
       padding-bottom: 0.45rem; }
-      @media (max-width: 63.9375em) {
-        section#servicios .servicio h2 {
-          font-size: 1.25rem; } }
     section#servicios .servicio p {
-      font-size: 1.125rem; }
+      font-size: 0.9rem; }
       @media (max-width: 63.9375em) {
         section#servicios .servicio p {
           font-size: 0.9rem; } }
     section#servicios .servicio svg {
-      padding-bottom: 0.45rem;
+      margin-bottom: 0.7rem;
       height: auto; }
       section#servicios .servicio svg path {
         fill: #00B3CB; }
       section#servicios .servicio svg.bi-brush {
-        width: 2.5rem; }
+        width: 4rem; }
       section#servicios .servicio svg.bi-braces {
-        width: 3.3rem; }
-    section#servicios .servicio:nth-child(2) svg {
-      padding-bottom: 4px; }
+        width: 5.6rem; }
+      section#servicios .servicio svg.bi-shop {
+        width: 4.3rem; }
 
 section#promo {
   padding: 110px 20px;
