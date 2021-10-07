@@ -36,12 +36,33 @@ h1
     @include breakpoint-down(small)
         font-size: $font-md
 
+section
+    scroll-margin-top: 51px // navbar height
+
 .row
     padding-left: 1.5em
     padding-right: 1.5em
 
-section
-    scroll-margin-top: 51px // navbar height
+    &-wide
+        min-width: 100%
+
+.card
+    background-color: $white
+    padding: 1em
+    margin: 1em
+    display: flex
+    align-items: center
+    min-height: 18em
+    max-width: 18rem 
+    min-width: 10rem
+    border-radius: 8px
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.15), -8px -8px 31px darken(white, 2.5%)
+    transition: 0.3s
+    
+    &:hover
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
+
+
 
 
 // spacing
@@ -58,6 +79,7 @@ section
 
     &-jc-c
         justify-content: center
+        flex-wrap: wrap
 
     &-ai-c
         align-items: center
@@ -115,3 +137,4 @@ section
   color: black
   text-decoration: none
   cursor: pointer
+
