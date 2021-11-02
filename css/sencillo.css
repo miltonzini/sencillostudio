@@ -664,7 +664,7 @@ section#hola {
     background-position: center 60%; }
     @media (max-width: 39.9375em) {
       section#hola .bg-row {
-        width: 100vh; } }
+        width: 100%; } }
     @media (min-width: 64em) {
       section#hola .bg-row {
         background-position: center 65%; } }
