@@ -569,7 +569,7 @@ section {
 		background-image: -webkit-gradient(linear, left top, left bottom, from(#d2d3d4), to(transparent));
 		background-image: -o-linear-gradient(#d2d3d4, transparent);
 		background-image: linear-gradient(#d2d3d4, transparent);
-		z-index: 10000;
+		z-index: 10001;
 }
 .header nav {
 		background-color: #f3f5f4;
@@ -622,6 +622,7 @@ section {
 		top: 4.5rem;
 		right: 2rem;
 		left: 2rem;
+		z-index: 10005;
 }
 .header__menu a {
 		display: block;
