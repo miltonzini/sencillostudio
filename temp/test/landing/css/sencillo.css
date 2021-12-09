@@ -968,7 +968,7 @@ section.accent-center p {
 section.accent p {
 		color: #f3f5f4;
 		font-size: 1.2em;
-		font-weight: bold;
+		font-weight: 600;
 		line-height: 1.5em;
 }
 @media (max-width: 39.9375em) {
