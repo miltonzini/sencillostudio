@@ -427,6 +427,13 @@ h1 {
 		}
 }
 
+h2.section-title {
+		color: #FF5851;
+		font-weight: bold;
+		font-size: 1.5em;
+		text-align: center;
+}
+
 section {
 		scroll-margin-top: 51px;
 }
@@ -541,6 +548,27 @@ section {
 		color: black;
 		text-decoration: none;
 		cursor: pointer;
+}
+
+ul {
+		list-style: none;
+		margin-bottom: 1em;
+		text-align: left !important;
+		line-height: 1.2em;
+}
+
+li::before {
+		content: "";
+		background: #FF5851;
+		width: 0.4rem;
+		height: 0.4rem;
+		border-radius: 50%;
+		display: inline-block;
+		line-height: 1rem;
+		color: white;
+		text-align: center;
+		margin-right: 0.5rem;
+		margin-bottom: 0.09rem;
 }
 
 .header.open {
@@ -1046,9 +1074,69 @@ section.accent .modal .modal-content .combo h3 {
 		font-weight: bold;
 }
 
+section#trabajos {
+		padding: 5em 20px;
+		background: #f3f5f4;
+		background: -webkit-gradient(linear, left top, left bottom, from(#f9faf9), to(#edf0ef));
+		background: -o-linear-gradient(top, #f9faf9 0%, #edf0ef 100%);
+		background: linear-gradient(180deg, #f9faf9 0%, #edf0ef 100%);
+}
+section#trabajos h2.section-title {
+		text-align: center;
+		color: #FF5851;
+		padding-bottom: 57px;
+}
+section#trabajos .wrapper {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+}
+@media (max-width: 39.9375em) {
+		section#trabajos .wrapper {
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+				    -ms-flex-direction: column;
+				        flex-direction: column;
+				-webkit-box-align: center;
+				    -ms-flex-align: center;
+				        align-items: center;
+		}
+}
+section#trabajos .trabajo {
+		-ms-flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		        flex-direction: column;
+		text-align: center;
+		line-height: 1.3em;
+}
+section#trabajos .trabajo img {
+		width: 100%;
+		margin-bottom: 1em;
+}
+section#trabajos .trabajo h2 {
+		color: #FF5851;
+		font-weight: 400;
+		font-size: 1.25rem;
+		padding-bottom: 0.45rem;
+}
+section#trabajos .trabajo p {
+		font-size: 0.9rem;
+}
+@media (max-width: 63.9375em) {
+		section#trabajos .trabajo p {
+				font-size: 0.9rem;
+		}
+}
+section#trabajos .trabajo ul {
+		text-align: left;
+		font-weight: regular;
+}
+
 section#contacto {
 		padding: 110px 20px;
-		background: #f3f5f4;
+		background: white;
 		color: #FF5851;
 		text-align: center;
 		line-height: 1.3em;

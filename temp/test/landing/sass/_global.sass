@@ -35,6 +35,11 @@ h1
     font-size: $font-xl
     @include breakpoint-down(small)
         font-size: $font-md
+h2.section-title
+    color: $theme-primary
+    font-weight: bold
+    font-size: 1.5em
+    text-align: center
 
 section
     scroll-margin-top: 51px // navbar height
@@ -138,3 +143,24 @@ section
   text-decoration: none
   cursor: pointer
 
+ul 
+  list-style: none
+  //font-size: 1.2em
+  margin-bottom: 1em
+  text-align: left!important
+  line-height: 1.2em
+
+
+    
+li::before 
+    content: ""
+    background: $theme-primary
+    width: 0.4rem
+    height: 0.4rem
+    border-radius: 50%
+    display: inline-block
+    line-height: 1rem
+    color: white
+    text-align: center
+    margin-right: 0.5rem
+    margin-bottom: 0.09rem
