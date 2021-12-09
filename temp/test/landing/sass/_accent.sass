@@ -1,19 +1,42 @@
-section#promo
-    padding: 110px 20px
-    background: $theme-primary
+section.accent
+    padding: 4.375em 20px
     color: $theme-soft
-    //height: 50vh
     text-align: center
+    &-primary
+        background: $theme-primary
+    &-secondary
+        background: $theme-accent
+    &-left
+        p
+            //background: orange
+            @include breakpoint-up(medium)
+                padding-left: 2em
+                max-width: 40em
+                text-align: left
+            @include breakpoint-up(large)
+                padding-left: 5em
+    &-right
+        .row
+            direction: rtl
+        p
+            @include breakpoint-up(medium)
+                padding-right: 2em
+                max-width: 40em
+                text-align: right
+            @include breakpoint-up(large)
+                padding-right: 5em
+    &-center
+        p  
+            text-align: center
 
-    h2
-        font-size: 24px
+    p
+        color: $theme-soft
+        font-size: 1.2em
+        font-weight: bold
+        line-height: 1.5em
         @include breakpoint-down(small)
-            font-size: $font-md
-        max-width: 29rem
-        margin-left: auto
-        margin-right: auto
-        margin-bottom: 35px
-        line-height: 1.3em
+            text-align: center
+       
 
     a.button
         padding: 0.25rem 3rem 
