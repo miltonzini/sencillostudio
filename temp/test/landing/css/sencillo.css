@@ -594,8 +594,8 @@ li::before {
 		right: 0;
 		bottom: 0;
 		left: 0;
-		background-image: -webkit-gradient(linear, left top, left bottom, from(#d2d3d4), to(transparent));
 		background-image: -o-linear-gradient(#d2d3d4, transparent);
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#d2d3d4), to(transparent));
 		background-image: linear-gradient(#d2d3d4, transparent);
 		z-index: 10001;
 }
@@ -893,8 +893,8 @@ section#hola h2 {
 section#servicios {
 		padding: 93px 20px 93px 20px;
 		background: #f3f5f4;
-		background: -webkit-gradient(linear, left bottom, left top, from(#f9faf9), to(#edf0ef));
 		background: -o-linear-gradient(bottom, #f9faf9 0%, #edf0ef 100%);
+		background: -webkit-gradient(linear, left bottom, left top, from(#f9faf9), to(#edf0ef));
 		background: linear-gradient(0deg, #f9faf9 0%, #edf0ef 100%);
 }
 section#servicios h1 {
@@ -957,6 +957,7 @@ section.accent {
 		padding: 4.375em 20px;
 		color: #f3f5f4;
 		text-align: center;
+		font-style: italic;
 }
 section.accent-primary {
 		background: #FF5851;
@@ -967,13 +968,8 @@ section.accent-secondary {
 @media (min-width: 40em) {
 		section.accent-left p {
 				padding-left: 2em;
-				max-width: 40em;
+				max-width: 29em;
 				text-align: left;
-		}
-}
-@media (min-width: 64em) {
-		section.accent-left p {
-				padding-left: 5em;
 		}
 }
 section.accent-right .row {
@@ -996,8 +992,8 @@ section.accent-center p {
 }
 section.accent p {
 		color: #f3f5f4;
-		font-size: 1.2em;
-		line-height: 1.5em;
+		font-size: 1.5em;
+		line-height: 1.3em;
 }
 @media (max-width: 39.9375em) {
 		section.accent p {
@@ -1077,8 +1073,8 @@ section.accent .modal .modal-content .combo h3 {
 section#trabajos {
 		padding: 5em 20px;
 		background: #f3f5f4;
-		background: -webkit-gradient(linear, left top, left bottom, from(#f9faf9), to(#edf0ef));
 		background: -o-linear-gradient(top, #f9faf9 0%, #edf0ef 100%);
+		background: -webkit-gradient(linear, left top, left bottom, from(#f9faf9), to(#edf0ef));
 		background: linear-gradient(180deg, #f9faf9 0%, #edf0ef 100%);
 }
 section#trabajos h2.section-title {
@@ -1132,6 +1128,8 @@ section#trabajos .trabajo p {
 section#trabajos .trabajo ul {
 		text-align: left;
 		font-weight: regular;
+		padding-top: 0.25em;
+		padding-left: 1em;
 }
 
 section#contacto {
