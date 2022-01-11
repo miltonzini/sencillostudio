@@ -480,6 +480,102 @@
 				        transform: scale(60%);
 		}
 }
+@-webkit-keyframes shape-accent1-pentagon-md {
+		from {
+				-webkit-transform: rotate(0deg);
+				        transform: rotate(0deg);
+		}
+		50% {
+				-webkit-transform: rotate(35deg);
+				        transform: rotate(35deg);
+		}
+		to {
+				-webkit-transform: rotate(0deg);
+				        transform: rotate(0deg);
+		}
+}
+@keyframes shape-accent1-pentagon-md {
+		from {
+				-webkit-transform: rotate(0deg);
+				        transform: rotate(0deg);
+		}
+		50% {
+				-webkit-transform: rotate(35deg);
+				        transform: rotate(35deg);
+		}
+		to {
+				-webkit-transform: rotate(0deg);
+				        transform: rotate(0deg);
+		}
+}
+@-webkit-keyframes shape-accent1-diamond-md {
+		from {
+				-webkit-transform: scale(90%);
+				        transform: scale(90%);
+		}
+		50% {
+				-webkit-transform: scale(110%);
+				        transform: scale(110%);
+		}
+		to {
+				-webkit-transform: scale(90%);
+				        transform: scale(90%);
+		}
+}
+@keyframes shape-accent1-diamond-md {
+		from {
+				-webkit-transform: scale(90%);
+				        transform: scale(90%);
+		}
+		50% {
+				-webkit-transform: scale(110%);
+				        transform: scale(110%);
+		}
+		to {
+				-webkit-transform: scale(90%);
+				        transform: scale(90%);
+		}
+}
+@-webkit-keyframes shape-accent1-triangle-md {
+		from {
+				-webkit-transform: rotate(0deg);
+				        transform: rotate(0deg);
+				-webkit-transform: scale(60%);
+				        transform: scale(60%);
+		}
+		50% {
+				-webkit-transform: rotate(-25deg);
+				        transform: rotate(-25deg);
+				-webkit-transform: scale(75%);
+				        transform: scale(75%);
+		}
+		to {
+				-webkit-transform: rotate(0deg);
+				        transform: rotate(0deg);
+				-webkit-transform: scale(60%);
+				        transform: scale(60%);
+		}
+}
+@keyframes shape-accent1-triangle-md {
+		from {
+				-webkit-transform: rotate(0deg);
+				        transform: rotate(0deg);
+				-webkit-transform: scale(60%);
+				        transform: scale(60%);
+		}
+		50% {
+				-webkit-transform: rotate(-25deg);
+				        transform: rotate(-25deg);
+				-webkit-transform: scale(75%);
+				        transform: scale(75%);
+		}
+		to {
+				-webkit-transform: rotate(0deg);
+				        transform: rotate(0deg);
+				-webkit-transform: scale(60%);
+				        transform: scale(60%);
+		}
+}
 * {
 		margin: 0;
 		padding: 0;
@@ -1118,24 +1214,52 @@ section.accent .shapes img {
 		section.accent .shapes img {
 				-webkit-filter: brightness(85%);
 				        filter: brightness(85%);
-				opacity: 20%;
+				opacity: 25%;
 		}
 }
-section.accent .shapes img.pentagon-1 {
-		-webkit-animation: shape-accent1-pentagon-lg 7s linear infinite;
-		        animation: shape-accent1-pentagon-lg 7s linear infinite;
-		right: 125px;
-		top: -15px;
+@media (min-width: 64em) {
+		section.accent .shapes img.pentagon-1 {
+				-webkit-animation: shape-accent1-pentagon-lg 7s linear infinite;
+				        animation: shape-accent1-pentagon-lg 7s linear infinite;
+				right: 125px;
+				top: -15px;
+		}
 }
-section.accent .shapes img.diamond-1 {
-		-webkit-animation: shape-accent1-diamond-lg 4s linear infinite;
-		        animation: shape-accent1-diamond-lg 4s linear infinite;
-		right: 90px;
+@media (max-width: 63.9375em) {
+		section.accent .shapes img.pentagon-1 {
+				-webkit-animation: shape-accent1-pentagon-md 8s linear infinite;
+				        animation: shape-accent1-pentagon-md 8s linear infinite;
+				right: 250px;
+				top: -15px;
+		}
 }
-section.accent .shapes img.triangle-1 {
-		right: 44px;
-		-webkit-animation: shape-accent1-triangle-lg 6s linear infinite;
-		        animation: shape-accent1-triangle-lg 6s linear infinite;
+@media (min-width: 64em) {
+		section.accent .shapes img.diamond-1 {
+				-webkit-animation: shape-accent1-diamond-lg 4s linear infinite;
+				        animation: shape-accent1-diamond-lg 4s linear infinite;
+				right: 90px;
+		}
+}
+@media (max-width: 63.9375em) {
+		section.accent .shapes img.diamond-1 {
+				-webkit-animation: shape-accent1-diamond-md 5s linear infinite;
+				        animation: shape-accent1-diamond-md 5s linear infinite;
+				right: 150px;
+		}
+}
+@media (min-width: 64em) {
+		section.accent .shapes img.triangle-1 {
+				-webkit-animation: shape-accent1-triangle-lg 6s linear infinite;
+				        animation: shape-accent1-triangle-lg 6s linear infinite;
+				right: 44px;
+		}
+}
+@media (max-width: 63.9375em) {
+		section.accent .shapes img.triangle-1 {
+				-webkit-animation: shape-accent1-triangle-md 7s linear infinite;
+				        animation: shape-accent1-triangle-md 7s linear infinite;
+				right: 44px;
+		}
 }
 @media (max-width: 500px) {
 		section.accent .modal {

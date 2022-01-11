@@ -55,18 +55,31 @@ section.accent
                 filter: brightness(92%)
             @include breakpoint-down(medium)
                 filter: brightness(85%)
-                opacity: 20%
+                opacity: 25%
 
             &.pentagon-1
-                animation: shape-accent1-pentagon-lg 7s linear infinite
-                right: 125px
-                top: -15px
+                @include breakpoint-up(large)
+                    animation: shape-accent1-pentagon-lg 7s linear infinite
+                    right: 125px
+                    top: -15px
+                @include breakpoint-down(medium)
+                    animation: shape-accent1-pentagon-md 8s linear infinite
+                    right: 250px
+                    top: -15px
             &.diamond-1
-                animation: shape-accent1-diamond-lg 4s linear infinite
-                right: 90px
+                @include breakpoint-up(large)
+                    animation: shape-accent1-diamond-lg 4s linear infinite
+                    right: 90px
+                @include breakpoint-down(medium)
+                    animation: shape-accent1-diamond-md 5s linear infinite
+                    right: 150px
             &.triangle-1
-                right: 44px
-                animation: shape-accent1-triangle-lg 6s linear infinite
+                @include breakpoint-up(large)
+                    animation: shape-accent1-triangle-lg 6s linear infinite
+                    right: 44px
+                @include breakpoint-down(medium)
+                    animation: shape-accent1-triangle-md 7s linear infinite
+                    right: 44px
 
         
 
