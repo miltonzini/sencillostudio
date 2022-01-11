@@ -3,6 +3,7 @@ section.accent
     color: $theme-soft
     text-align: center
     font-style: italic
+
     &-primary
         background: $theme-primary
     &-secondary
@@ -34,6 +35,7 @@ section.accent
         color: $theme-soft
         font-size: 1.5em
         line-height: 1.3em
+        z-index: 400
         @include breakpoint-down(small)
             text-align: center
        
@@ -49,20 +51,22 @@ section.accent
         img
             position: absolute
             //top: 0
-            z-index: 1
-            filter: brightness(85%)
+            @include breakpoint-up(large)
+                filter: brightness(92%)
             @include breakpoint-down(medium)
-                visibility: hidden
+                filter: brightness(85%)
+                opacity: 10%
+
             &.pentagon-1
-                animation: shape-accent1-pentagon 7s linear infinite
+                animation: shape-accent1-pentagon-lg 7s linear infinite
                 right: 125px
                 top: -15px
             &.diamond-1
-                animation: shape-accent1-diamond 4s linear infinite
+                animation: shape-accent1-diamond-lg 4s linear infinite
                 right: 90px
             &.triangle-1
                 right: 44px
-                animation: shape-accent1-triangle 6s linear infinite
+                animation: shape-accent1-triangle-lg 6s linear infinite
 
         
 
