@@ -3,6 +3,7 @@ section.accent
     color: $theme-soft
     text-align: center
     font-style: italic
+
     &-primary
         background: $theme-primary
     &-secondary
@@ -34,6 +35,7 @@ section.accent
         color: $theme-soft
         font-size: 1.5em
         line-height: 1.3em
+        z-index: 400
         @include breakpoint-down(small)
             text-align: center
        
@@ -42,6 +44,46 @@ section.accent
         padding: 0.25rem 3rem 
         border: $theme-soft 1px solid
         border-radius: 40px
+    
+    .shapes
+        position: relative
+        
+        img
+            position: absolute
+            //top: 0
+            @include breakpoint-up(large)
+                filter: brightness(92%)
+            @include breakpoint-down(medium)
+                filter: brightness(85%)
+                opacity: 25%
+
+            &.pentagon-1
+                @include breakpoint-up(large)
+                    animation: shape-accent1-pentagon-lg 7s linear infinite
+                    right: 125px
+                    top: -15px
+                @include breakpoint-down(medium)
+                    animation: shape-accent1-pentagon-md 6s linear infinite
+                    right: 290px
+                    top: -50px
+            &.diamond-1
+                @include breakpoint-up(large)
+                    animation: shape-accent1-diamond-lg 4s linear infinite
+                    right: 90px
+                @include breakpoint-down(medium)
+                    animation: shape-accent1-diamond-md 3s linear infinite
+                    top: 10px
+                    right: 150px
+            &.triangle-1
+                @include breakpoint-up(large)
+                    animation: shape-accent1-triangle-lg 6s linear infinite
+                    right: 44px
+                @include breakpoint-down(medium)
+                    animation: shape-accent1-triangle-md 5s linear infinite
+                    top: 80px
+                    right: 10px
+
+        
 
     
     .modal
