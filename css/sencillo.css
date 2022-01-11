@@ -957,6 +957,7 @@ section.accent {
 		padding: 4.375em 20px;
 		color: #f3f5f4;
 		text-align: center;
+		font-style: italic;
 }
 section.accent-primary {
 		background: #FF5851;
@@ -967,13 +968,8 @@ section.accent-secondary {
 @media (min-width: 40em) {
 		section.accent-left p {
 				padding-left: 2em;
-				max-width: 40em;
+				max-width: 29em;
 				text-align: left;
-		}
-}
-@media (min-width: 64em) {
-		section.accent-left p {
-				padding-left: 5em;
 		}
 }
 section.accent-right .row {
@@ -996,8 +992,8 @@ section.accent-center p {
 }
 section.accent p {
 		color: #f3f5f4;
-		font-size: 1.2em;
-		line-height: 1.5em;
+		font-size: 1.5em;
+		line-height: 1.3em;
 }
 @media (max-width: 39.9375em) {
 		section.accent p {
@@ -1132,6 +1128,8 @@ section#trabajos .trabajo p {
 section#trabajos .trabajo ul {
 		text-align: left;
 		font-weight: regular;
+		padding-top: 0.25em;
+		padding-left: 1em;
 }
 
 section#contacto {

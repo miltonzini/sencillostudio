@@ -2,6 +2,7 @@ section.accent
     padding: 4.375em 20px
     color: $theme-soft
     text-align: center
+    font-style: italic
     &-primary
         background: $theme-primary
     &-secondary
@@ -11,10 +12,10 @@ section.accent
             //background: orange
             @include breakpoint-up(medium)
                 padding-left: 2em
-                max-width: 40em
+                max-width: 29em
                 text-align: left
             @include breakpoint-up(large)
-                padding-left: 5em
+                //padding-left: 5em
     &-right
         .row
             direction: rtl
@@ -31,8 +32,8 @@ section.accent
 
     p
         color: $theme-soft
-        font-size: 1.2em
-        line-height: 1.5em
+        font-size: 1.5em
+        line-height: 1.3em
         @include breakpoint-down(small)
             text-align: center
        
