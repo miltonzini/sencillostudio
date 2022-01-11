@@ -1118,7 +1118,7 @@ section.accent .shapes img {
 		section.accent .shapes img {
 				-webkit-filter: brightness(85%);
 				        filter: brightness(85%);
-				opacity: 10%;
+				opacity: 20%;
 		}
 }
 section.accent .shapes img.pentagon-1 {
