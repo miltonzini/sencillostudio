@@ -384,6 +384,102 @@
 				        transform: rotate(60deg);
 		}
 }
+@-webkit-keyframes shape-accent1-pentagon {
+		from {
+				-webkit-transform: rotate(0deg);
+				        transform: rotate(0deg);
+		}
+		50% {
+				-webkit-transform: rotate(25deg);
+				        transform: rotate(25deg);
+		}
+		to {
+				-webkit-transform: rotate(0deg);
+				        transform: rotate(0deg);
+		}
+}
+@keyframes shape-accent1-pentagon {
+		from {
+				-webkit-transform: rotate(0deg);
+				        transform: rotate(0deg);
+		}
+		50% {
+				-webkit-transform: rotate(25deg);
+				        transform: rotate(25deg);
+		}
+		to {
+				-webkit-transform: rotate(0deg);
+				        transform: rotate(0deg);
+		}
+}
+@-webkit-keyframes shape-accent1-diamond {
+		from {
+				-webkit-transform: scale(90%);
+				        transform: scale(90%);
+		}
+		50% {
+				-webkit-transform: scale(100%);
+				        transform: scale(100%);
+		}
+		to {
+				-webkit-transform: scale(90%);
+				        transform: scale(90%);
+		}
+}
+@keyframes shape-accent1-diamond {
+		from {
+				-webkit-transform: scale(90%);
+				        transform: scale(90%);
+		}
+		50% {
+				-webkit-transform: scale(100%);
+				        transform: scale(100%);
+		}
+		to {
+				-webkit-transform: scale(90%);
+				        transform: scale(90%);
+		}
+}
+@-webkit-keyframes shape-accent1-triangle {
+		from {
+				-webkit-transform: rotate(0deg);
+				        transform: rotate(0deg);
+				-webkit-transform: scale(60%);
+				        transform: scale(60%);
+		}
+		50% {
+				-webkit-transform: rotate(-25deg);
+				        transform: rotate(-25deg);
+				-webkit-transform: scale(68%);
+				        transform: scale(68%);
+		}
+		to {
+				-webkit-transform: rotate(0deg);
+				        transform: rotate(0deg);
+				-webkit-transform: scale(60%);
+				        transform: scale(60%);
+		}
+}
+@keyframes shape-accent1-triangle {
+		from {
+				-webkit-transform: rotate(0deg);
+				        transform: rotate(0deg);
+				-webkit-transform: scale(60%);
+				        transform: scale(60%);
+		}
+		50% {
+				-webkit-transform: rotate(-25deg);
+				        transform: rotate(-25deg);
+				-webkit-transform: scale(68%);
+				        transform: scale(68%);
+		}
+		to {
+				-webkit-transform: rotate(0deg);
+				        transform: rotate(0deg);
+				-webkit-transform: scale(60%);
+				        transform: scale(60%);
+		}
+}
 * {
 		margin: 0;
 		padding: 0;
@@ -594,8 +690,8 @@ li::before {
 		right: 0;
 		bottom: 0;
 		left: 0;
-		background-image: -o-linear-gradient(#d2d3d4, transparent);
 		background-image: -webkit-gradient(linear, left top, left bottom, from(#d2d3d4), to(transparent));
+		background-image: -o-linear-gradient(#d2d3d4, transparent);
 		background-image: linear-gradient(#d2d3d4, transparent);
 		z-index: 10001;
 }
@@ -893,8 +989,8 @@ section#hola h2 {
 section#servicios {
 		padding: 93px 20px 93px 20px;
 		background: #f3f5f4;
-		background: -o-linear-gradient(bottom, #f9faf9 0%, #edf0ef 100%);
 		background: -webkit-gradient(linear, left bottom, left top, from(#f9faf9), to(#edf0ef));
+		background: -o-linear-gradient(bottom, #f9faf9 0%, #edf0ef 100%);
 		background: linear-gradient(0deg, #f9faf9 0%, #edf0ef 100%);
 }
 section#servicios h1 {
@@ -1005,6 +1101,36 @@ section.accent a.button {
 		border: #f3f5f4 1px solid;
 		border-radius: 40px;
 }
+section.accent .shapes {
+		position: relative;
+}
+section.accent .shapes img {
+		position: absolute;
+		z-index: 1;
+		-webkit-filter: brightness(85%);
+		        filter: brightness(85%);
+}
+@media (max-width: 63.9375em) {
+		section.accent .shapes img {
+				visibility: hidden;
+		}
+}
+section.accent .shapes img.pentagon-1 {
+		-webkit-animation: shape-accent1-pentagon 7s linear infinite;
+		        animation: shape-accent1-pentagon 7s linear infinite;
+		right: 125px;
+		top: -15px;
+}
+section.accent .shapes img.diamond-1 {
+		-webkit-animation: shape-accent1-diamond 4s linear infinite;
+		        animation: shape-accent1-diamond 4s linear infinite;
+		right: 90px;
+}
+section.accent .shapes img.triangle-1 {
+		right: 44px;
+		-webkit-animation: shape-accent1-triangle 6s linear infinite;
+		        animation: shape-accent1-triangle 6s linear infinite;
+}
 @media (max-width: 500px) {
 		section.accent .modal {
 				font-size: 12px;
@@ -1073,8 +1199,8 @@ section.accent .modal .modal-content .combo h3 {
 section#trabajos {
 		padding: 5em 20px;
 		background: #f3f5f4;
-		background: -o-linear-gradient(top, #f9faf9 0%, #edf0ef 100%);
 		background: -webkit-gradient(linear, left top, left bottom, from(#f9faf9), to(#edf0ef));
+		background: -o-linear-gradient(top, #f9faf9 0%, #edf0ef 100%);
 		background: linear-gradient(180deg, #f9faf9 0%, #edf0ef 100%);
 }
 section#trabajos h2.section-title {

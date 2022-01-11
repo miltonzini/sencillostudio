@@ -42,6 +42,29 @@ section.accent
         padding: 0.25rem 3rem 
         border: $theme-soft 1px solid
         border-radius: 40px
+    
+    .shapes
+        position: relative
+        
+        img
+            position: absolute
+            //top: 0
+            z-index: 1
+            filter: brightness(85%)
+            @include breakpoint-down(medium)
+                visibility: hidden
+            &.pentagon-1
+                animation: shape-accent1-pentagon 7s linear infinite
+                right: 125px
+                top: -15px
+            &.diamond-1
+                animation: shape-accent1-diamond 4s linear infinite
+                right: 90px
+            &.triangle-1
+                right: 44px
+                animation: shape-accent1-triangle 6s linear infinite
+
+        
 
     
     .modal
