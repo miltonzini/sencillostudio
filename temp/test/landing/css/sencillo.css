@@ -860,7 +860,7 @@ li::before {
 		margin-right: 16px;
 }
 
-section#masthead {
+section#masthead-lg {
 		background-color: #f3f5f4;
 		background: -o-linear-gradient(45deg, #f9faf9 0%, #edf0ef 100%);
 		background: linear-gradient(45deg, #f9faf9 0%, #edf0ef 100%);
@@ -881,24 +881,24 @@ section#masthead {
 		overflow: hidden;
 		position: relative;
 }
-section#masthead .img-container {
+section#masthead-lg .img-container {
 		/*background-color: pink*/
 		z-index: 3;
 }
-section#masthead img.logo, section#masthead svg.logo {
+section#masthead-lg img.logo, section#masthead-lg svg.logo {
 		z-index: 3;
 }
 @media (min-width: 900px) {
-		section#masthead img.logo, section#masthead svg.logo {
+		section#masthead-lg img.logo, section#masthead-lg svg.logo {
 				width: 37vw;
 		}
 }
 @media (max-width: 899px) {
-		section#masthead img.logo, section#masthead svg.logo {
+		section#masthead-lg img.logo, section#masthead-lg svg.logo {
 				width: 50vw;
 		}
 }
-section#masthead .brand-descrip {
+section#masthead-lg .brand-descrip {
 		font-size: 1.25em;
 		text-align: center;
 		margin-top: 0.6rem;
@@ -908,70 +908,70 @@ section#masthead .brand-descrip {
 		z-index: 3;
 }
 @media (max-width: 299px) {
-		section#masthead .brand-descrip {
+		section#masthead-lg .brand-descrip {
 				font-size: 0.8em;
 				letter-spacing: 0.1em;
 		}
 }
 @media (min-width: 300px) and (max-width: 499px) {
-		section#masthead .brand-descrip {
+		section#masthead-lg .brand-descrip {
 				font-size: 0.9em;
 		}
 }
 @media (min-width: 500px) and (max-width: 899px) {
-		section#masthead .brand-descrip {
+		section#masthead-lg .brand-descrip {
 				font-size: 1.15em;
 		}
 }
-section#masthead .brand-descrip span.soluciones {
+section#masthead-lg .brand-descrip span.soluciones {
 		-webkit-animation: 3s fade-in;
 		        animation: 3s fade-in;
 }
-section#masthead .brand-descrip span.digitales {
+section#masthead-lg .brand-descrip span.digitales {
 		-webkit-animation: 5.5s fade-in;
 		        animation: 5.5s fade-in;
 }
-section#masthead .shapes {
+section#masthead-lg .shapes {
 		overflow: hidden;
 		display: block;
 }
-section#masthead .shapes img {
+section#masthead-lg .shapes img {
 		position: absolute;
 		z-index: 1;
 }
-section#masthead .shapes .triangle-1 {
+section#masthead-lg .shapes .triangle-1 {
 		left: 2em;
 		bottom: 2em;
 }
 @media (min-width: 40em) {
-		section#masthead .shapes .triangle-1 {
+		section#masthead-lg .shapes .triangle-1 {
 				-webkit-animation: shape-1-lg 22s linear infinite;
 				        animation: shape-1-lg 22s linear infinite;
 		}
 }
 @media (max-width: 39.9375em) {
-		section#masthead .shapes .triangle-1 {
+		section#masthead-lg .shapes .triangle-1 {
 				-webkit-animation: shape-1-sm 22s linear infinite;
 				        animation: shape-1-sm 22s linear infinite;
 		}
 }
-section#masthead .shapes .diamond-1 {
+section#masthead-lg .shapes .diamond-1 {
 		right: -100px;
 		bottom: 1em;
 }
 @media (min-width: 40em) {
-		section#masthead .shapes .diamond-1 {
+		section#masthead-lg .shapes .diamond-1 {
 				-webkit-animation: shape-2-lg 16s linear infinite;
 				        animation: shape-2-lg 16s linear infinite;
 		}
 }
 @media (max-width: 39.9375em) {
-		section#masthead .shapes .diamond-1 {
+		section#masthead-lg .shapes .diamond-1 {
 				-webkit-animation: shape-2-sm 10s linear infinite;
 				        animation: shape-2-sm 10s linear infinite;
 		}
 }
-section#masthead .shapes .diamond-2 {
+section#masthead-lg .shapes .diamond-2 {
 		right: -100px;
 		bottom: 1em;
 		-webkit-transform: scale(20%);
@@ -979,16 +979,146 @@ section#masthead .shapes .diamond-2 {
 		        transform: scale(20%);
 }
 @media (min-width: 40em) {
-		section#masthead .shapes .diamond-2 {
+		section#masthead-lg .shapes .diamond-2 {
 				-webkit-animation: shape-3-lg 25s linear infinite;
 				        animation: shape-3-lg 25s linear infinite;
 		}
 }
 @media (max-width: 39.9375em) {
-		section#masthead .shapes .diamond-2 {
+		section#masthead-lg .shapes .diamond-2 {
 				-webkit-animation: shape-3-sm 20s linear infinite;
 				        animation: shape-3-sm 20s linear infinite;
 		}
+}
+
+section#masthead-sm {
+		background: #fff;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		height: 40vh;
+		overflow: hidden;
+		position: relative;
+		padding-top: 2em;
+}
+section#masthead-sm .img-container {
+		/*background-color: pink*/
+		z-index: 3;
+}
+section#masthead-sm img.logo, section#masthead-sm svg.logo {
+		z-index: 3;
+}
+@media (min-width: 900px) {
+		section#masthead-sm img.logo, section#masthead-sm svg.logo {
+				width: 25vw;
+		}
+}
+@media (max-width: 899px) {
+		section#masthead-sm img.logo, section#masthead-sm svg.logo {
+				width: 50vw;
+		}
+}
+section#masthead-sm .brand-descrip {
+		font-size: 1.25em;
+		text-align: center;
+		margin-top: 0.6rem;
+		line-height: 1.25rem;
+		max-width: 19rem;
+		letter-spacing: 0.15em;
+		z-index: 3;
+}
+@media (max-width: 299px) {
+		section#masthead-sm .brand-descrip {
+				font-size: 0.8em;
+				letter-spacing: 0.1em;
+		}
+}
+@media (min-width: 300px) and (max-width: 499px) {
+		section#masthead-sm .brand-descrip {
+				font-size: 0.9em;
+		}
+}
+@media (min-width: 500px) and (max-width: 899px) {
+		section#masthead-sm .brand-descrip {
+				font-size: 1.15em;
+		}
+}
+section#masthead-sm .brand-descrip span.soluciones {
+		-webkit-animation: 3s fade-in;
+		        animation: 3s fade-in;
+}
+section#masthead-sm .brand-descrip span.digitales {
+		-webkit-animation: 5.5s fade-in;
+		        animation: 5.5s fade-in;
+}
+section#masthead-sm .shapes {
+		position: absolute;
+		margin: 0px;
+		padding: 0px;
+		left: 15vw;
+		top: 12px;
+		opacity: 0.75;
+}
+@media (max-width: 599px) {
+		section#masthead-sm .shapes {
+				left: 25px;
+				top: 0px;
+				opacity: 0.25;
+		}
+}
+@media (min-width: 532px) and (max-width: 599px) {
+		section#masthead-sm .shapes {
+				left: 25px;
+				top: 0px;
+				opacity: 0.25;
+		}
+}
+@media (min-width: 600px) and (max-width: 799px) {
+		section#masthead-sm .shapes {
+				-webkit-transform: scale(60%);
+				    -ms-transform: scale(60%);
+				        transform: scale(60%);
+				left: -55px;
+				top: 20px;
+		}
+}
+@media (min-width: 800px) and (max-width: 899px) {
+		section#masthead-sm .shapes {
+				-webkit-transform: scale(75%);
+				    -ms-transform: scale(75%);
+				        transform: scale(75%);
+				left: -30px;
+				top: 15px;
+		}
+}
+section#masthead-sm .shapes img {
+		position: relative;
+		z-index: 1;
+		-webkit-transform: scale(45%);
+		    -ms-transform: scale(45%);
+		        transform: scale(45%);
+}
+section#masthead-sm .shapes .tilt-triangle-1 {
+		left: -30px;
+		top: -20px;
+}
+section#masthead-sm .shapes .tilt-square-1 {
+		left: -198px;
+		top: 39px;
+}
+section#masthead-sm .shapes .tilt-circle-1 {
+		left: -298px;
+		top: -12px;
 }
 
 section#hola {

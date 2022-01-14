@@ -23,7 +23,7 @@
     <meta property="og:url" content="https://sencillostudio.ar/"/>
     <meta property="og:site_name" content="SencilloStudio.ar"/>
     <meta property="og:description" content="SencilloStudio | Diseño Web y Diseño Gráfico"/>
-    <title>SencilloStudio.ar</title>
+    <title>Planes | SencilloStudio.ar</title>
 
 	
 	
@@ -39,20 +39,20 @@
 	<meta name="msapplication-config" content="https://sencillostudio.ar/img/favicon/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
 
-	<link href="vendor/cssreset.css" rel="stylesheet" type="text/css">
-	<link href="css/sencillo.css" rel="stylesheet" type="text/css">
+	<link href="../vendor/cssreset.css" rel="stylesheet" type="text/css">
+	<link href="../css/sencillo.css" rel="stylesheet" type="text/css">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
 	
 </head>
-<body>
+<body id="planes">
 	<header class="header">
 		<div class="overlay has-fade"></div>
 		<nav class="container flex flex-jc-sb flex-ai-c">
 			<a href="#" class="header__logo">
-				<img src="img/logo/sencillostudio-sm.svg" alt="SencilloStudio" />
+				<img src="../img/logo/sencillostudio-sm.svg" alt="SencilloStudio" />
 			</a>
 
 			<a id="btnHamburguer" href="#" class="header__toggle hide-for-desktop">
@@ -77,7 +77,7 @@
 		</div>
 	</header>
 
-	<section id="masthead-lg">
+	<section id="masthead-sm">
 		<div class="img-container">			
 			<!-- <img class="logo" src="img/logo/sencillostudio-logo.svg"> --> <!-- replaced by inline svg for better css handling-->
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 385.75 42.65" class="logo" >
@@ -108,22 +108,16 @@
 			</svg>
 			
 			<div class="shapes">
-				<img src="img/svg/triangle.svg" alt="triangle" class="triangle-1"/>
-				<img src="img/svg/diamond.svg" alt="triangle" class="diamond-1"/>
-				<img src="img/svg/diamond.svg" alt="triangle" class="diamond-2"/>
+				<img src="../img/svg/tilt-triangle.svg" alt="triangle" class="tilt-triangle-1"/>
+				<img src="../img/svg/tilt-square.svg" alt="triangle" class="tilt-square-1"/>
+				<img src="../img/svg/tilt-circle.svg" alt="triangle" class="tilt-circle-1"/>
 			</div>
 		</div>
+			<!--
 			<h2 class="brand-descrip"><span class="soluciones">Soluciones</span> <span class="digitales">Digitales</span></h2>
+			-->
 	</section>
 	
-	<section id="hola">
-		<div class="color">
-		</div>
-		<div class="bg-row">
-			<h1><span class="accent">Ho</span>la</h1>
-			<h2>Somos un estudio de <em>diseño gráfico</em> y <em>desarrollo web</em> situado en Buenos Aires. Nos dedicamos a dar soluciones integrales a pymes y emprendimientos.</h2>
-		</div>
-	</section>
 
 	<section id="servicios">
 		<div class="row">
@@ -190,58 +184,16 @@
 		</div>
 	</section> -->
 
-	<section id="accent-1" class="accent accent-primary accent-left">
-		<div class="shapes">
-			<img src="img/svg/pentagon.svg" alt="pentagon" class="pentagon-1"/>
-			<img src="img/svg/diamond.svg" alt="diamond" class="diamond-1"/>
-			<img src="img/svg/triangle.svg" alt="triangle" class="triangle-1"/>
-		</div>
+	<section id="accent-1" class="accent accent-secondary accent-left">
 		<div class="row">
 			<div class="wrapper">
-				<p>Trabajamos junto a tu empresa o emprendimiento para mejorar su imagen y su presencia en línea</p>
+				<p>consultanos por packs combinados <br>
+				<strong>web + identidad de marca</strong></p>
 			</div>
 		</div>
 	</section>
 
-	<section id="trabajos">
-		<div class="row">
-			<h2 class="section-title">Algunos Trabajos</h2>
-			<div class="wrapper flex flex-jc-c">
-				<div class="trabajo card">
-					<div class="card-content">
-						<img src="img/misc/servicios-integrales-panama.jpg" alt="sencillo-trabajos-sipa">
-						<h2>Servicios Integrales Panamá</h2>
-						<ul>
-							<li>rediseño de marca</li>
-							<li>desarrollo web</li>
-							<li>SEO</li>
-							<li>marketing online</li>
-						</ul>
-					</div>
-				</div>
-				<div class="trabajo card">
-					<div class="card-content">
-						<img src="img/misc/sencillo-clases-de-musica-ar.jpg" alt="sencillo-trabajos-clases-de-musica-ar">
-						<h2>Clases de Música.ar</h2>
-						<ul>
-							<li>desarrollo web</li>
-							<li>SEO</li>
-						</ul>
-					</div>
-				</div>
-				<div class="trabajo card">
-					<div class="card-content">
-						<img src="img/misc/sencillo-rbz-consultores.jpg" alt="sencillo-trabajos-rbz-consultores">
-						<h2>RBZ Consultores</h2>
-						<ul>
-							<li>desarrollo web</li>
-							<li>SEO</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+	
 
 	<section id="contacto">
 		<div class="row">
@@ -279,6 +231,6 @@
 			header.classList.toggle("sticky", window.scrollY > 180);
 		})
 	</script>
-	<script src="js/script.js"></script>
+	<script src="../js/script.js"></script>
 </body>
 </html>

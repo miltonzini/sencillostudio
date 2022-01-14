@@ -1,4 +1,4 @@
-section#masthead
+section#masthead-lg
     background-color: $theme-soft
     background: $soft-gradient-45
     display: flex
@@ -72,3 +72,101 @@ section#masthead
                 animation: shape-3-lg 25s linear infinite
             @include breakpoint-down(small)
                 animation: shape-3-sm 20s linear infinite
+
+
+section#masthead-sm
+    background: $white
+    display: flex
+    justify-content: center /* align horizontal */
+    align-items: center /* align vertical */
+    flex-direction: column
+    height: 40vh
+    overflow: hidden
+    position: relative
+    padding-top: 2em
+
+    .img-container
+        /*background-color: pink*/
+        z-index: 3
+
+    img.logo, svg.logo
+        //temp mediaqueries
+        @media(min-width: 900px)
+            width: 25vw
+        @media(max-width: 899px)
+            width: 50vw
+        z-index: 3
+    
+
+    
+    .brand-descrip
+        font-size: 1.25em
+        text-align: center
+        margin-top: 0.6rem
+        line-height: 1.25rem
+        max-width: 19rem
+        letter-spacing: 0.15em
+        @media (max-width: 299px)
+            font-size: 0.8em
+            letter-spacing: 0.1em
+        @media (min-width: 300px) and (max-width: 499px)
+            font-size: 0.9em
+        @media (min-width: 500px) and (max-width: 899px)
+            font-size: 1.15em
+        span.soluciones
+            animation: 3s fade-in
+        span.digitales
+            animation: 5.5s fade-in
+        z-index: 3
+
+    .shapes
+        //overflow: hidden
+        //display: block
+        position: absolute
+        //background: pink
+        margin: 0px
+        padding: 0px
+        left: 15vw
+        top: 12px
+        opacity: 0.75
+        
+        @media (max-width: 599px)
+            //transform: scale(10%)
+            left: 25px
+            top: 0px
+            opacity: 0.25
+
+        @media (min-width: 532px) and (max-width: 599px)
+            //transform: scale(60%)
+            left: 25px
+            top: 0px
+            opacity: 0.25
+
+        @media (min-width: 600px) and (max-width: 799px)
+            transform: scale(60%)
+            left: -55px
+            top: 20px
+
+        @media (min-width: 800px) and (max-width: 899px)
+            transform: scale(75%)
+            left: -30px
+            top: 15px
+            
+
+        
+        img
+            position: relative
+            z-index: 1
+            transform: scale(45%)
+
+        .tilt-triangle-1
+            left: -30px
+            top: -20px
+
+        .tilt-square-1
+            left: -198px
+            top: 39px
+
+        .tilt-circle-1
+            left: -298px
+            top: -12px
