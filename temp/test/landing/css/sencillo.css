@@ -576,6 +576,90 @@
 				        transform: scale(60%);
 		}
 }
+@-webkit-keyframes shape-tilt-triangle-1 {
+		from {
+				-webkit-transform: skew(0deg, 0deg) scale(45%);
+				        transform: skew(0deg, 0deg) scale(45%);
+		}
+		50% {
+				-webkit-transform: skew(6deg, 5deg) scale(45%);
+				        transform: skew(6deg, 5deg) scale(45%);
+		}
+		to {
+				-webkit-transform: skew(0deg, 0deg) scale(45%);
+				        transform: skew(0deg, 0deg) scale(45%);
+		}
+}
+@keyframes shape-tilt-triangle-1 {
+		from {
+				-webkit-transform: skew(0deg, 0deg) scale(45%);
+				        transform: skew(0deg, 0deg) scale(45%);
+		}
+		50% {
+				-webkit-transform: skew(6deg, 5deg) scale(45%);
+				        transform: skew(6deg, 5deg) scale(45%);
+		}
+		to {
+				-webkit-transform: skew(0deg, 0deg) scale(45%);
+				        transform: skew(0deg, 0deg) scale(45%);
+		}
+}
+@-webkit-keyframes shape-tilt-square-1 {
+		from {
+				-webkit-transform: skew(0deg, 0deg) scale(45%);
+				        transform: skew(0deg, 0deg) scale(45%);
+		}
+		50% {
+				-webkit-transform: skew(3deg, 2deg) scale(45%);
+				        transform: skew(3deg, 2deg) scale(45%);
+		}
+		to {
+				-webkit-transform: skew(0deg, 0deg) scale(45%);
+				        transform: skew(0deg, 0deg) scale(45%);
+		}
+}
+@keyframes shape-tilt-square-1 {
+		from {
+				-webkit-transform: skew(0deg, 0deg) scale(45%);
+				        transform: skew(0deg, 0deg) scale(45%);
+		}
+		50% {
+				-webkit-transform: skew(3deg, 2deg) scale(45%);
+				        transform: skew(3deg, 2deg) scale(45%);
+		}
+		to {
+				-webkit-transform: skew(0deg, 0deg) scale(45%);
+				        transform: skew(0deg, 0deg) scale(45%);
+		}
+}
+@-webkit-keyframes shape-tilt-circle-1 {
+		from {
+				-webkit-transform: skew(0deg, 0deg) scale(45%);
+				        transform: skew(0deg, 0deg) scale(45%);
+		}
+		50% {
+				-webkit-transform: skew(5deg, 0deg) scale(45%);
+				        transform: skew(5deg, 0deg) scale(45%);
+		}
+		to {
+				-webkit-transform: skew(0deg, 0deg) scale(45%);
+				        transform: skew(0deg, 0deg) scale(45%);
+		}
+}
+@keyframes shape-tilt-circle-1 {
+		from {
+				-webkit-transform: skew(0deg, 0deg) scale(45%);
+				        transform: skew(0deg, 0deg) scale(45%);
+		}
+		50% {
+				-webkit-transform: skew(5deg, 0deg) scale(45%);
+				        transform: skew(5deg, 0deg) scale(45%);
+		}
+		to {
+				-webkit-transform: skew(0deg, 0deg) scale(45%);
+				        transform: skew(0deg, 0deg) scale(45%);
+		}
+}
 * {
 		margin: 0;
 		padding: 0;
@@ -1104,10 +1188,14 @@ section#masthead-sm .shapes img {
 section#masthead-sm .shapes .tilt-triangle-1 {
 		left: -30px;
 		top: -20px;
+		-webkit-animation: shape-tilt-triangle-1 3s linear infinite;
+		        animation: shape-tilt-triangle-1 3s linear infinite;
 }
 section#masthead-sm .shapes .tilt-square-1 {
 		left: -198px;
 		top: 39px;
+		-webkit-animation: shape-tilt-square-1 4s linear infinite;
+		        animation: shape-tilt-square-1 4s linear infinite;
 }
 @media (max-width: 461px) {
 		section#masthead-sm .shapes .tilt-square-1 {
@@ -1118,6 +1206,8 @@ section#masthead-sm .shapes .tilt-square-1 {
 section#masthead-sm .shapes .tilt-circle-1 {
 		left: -298px;
 		top: -12px;
+		-webkit-animation: shape-tilt-circle-1 3s linear infinite;
+		        animation: shape-tilt-circle-1 3s linear infinite;
 }
 @media (max-width: 332px) {
 		section#masthead-sm .shapes .tilt-circle-1 {
