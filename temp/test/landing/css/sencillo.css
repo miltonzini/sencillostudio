@@ -1076,13 +1076,6 @@ section#masthead-sm .shapes {
 				opacity: 0.25;
 		}
 }
-@media (min-width: 532px) and (max-width: 599px) {
-		section#masthead-sm .shapes {
-				left: 25px;
-				top: 0px;
-				opacity: 0.25;
-		}
-}
 @media (min-width: 600px) and (max-width: 799px) {
 		section#masthead-sm .shapes {
 				-webkit-transform: scale(60%);
@@ -1116,9 +1109,33 @@ section#masthead-sm .shapes .tilt-square-1 {
 		left: -198px;
 		top: 39px;
 }
+@media (max-width: 461px) {
+		section#masthead-sm .shapes .tilt-square-1 {
+				left: 0px;
+				top: -135px;
+		}
+}
 section#masthead-sm .shapes .tilt-circle-1 {
 		left: -298px;
 		top: -12px;
+}
+@media (max-width: 332px) {
+		section#masthead-sm .shapes .tilt-circle-1 {
+				left: 128px;
+				top: -250px;
+		}
+}
+@media (min-width: 333px) and (max-width: 461px) {
+		section#masthead-sm .shapes .tilt-circle-1 {
+				left: -53px;
+				top: -172px;
+		}
+}
+@media (min-width: 462px) and (max-width: 530px) {
+		section#masthead-sm .shapes .tilt-circle-1 {
+				left: 125px;
+				top: -75px;
+		}
 }
 
 section#hola {

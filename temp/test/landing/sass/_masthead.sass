@@ -120,24 +120,15 @@ section#masthead-sm
         z-index: 3
 
     .shapes
-        //overflow: hidden
-        //display: block
         position: absolute
-        //background: pink
         margin: 0px
         padding: 0px
         left: 15vw
         top: 12px
         opacity: 0.75
         
+        
         @media (max-width: 599px)
-            //transform: scale(10%)
-            left: 25px
-            top: 0px
-            opacity: 0.25
-
-        @media (min-width: 532px) and (max-width: 599px)
-            //transform: scale(60%)
             left: 25px
             top: 0px
             opacity: 0.25
@@ -159,6 +150,7 @@ section#masthead-sm
             z-index: 1
             transform: scale(45%)
 
+
         .tilt-triangle-1
             left: -30px
             top: -20px
@@ -166,7 +158,19 @@ section#masthead-sm
         .tilt-square-1
             left: -198px
             top: 39px
+            @media (max-width: 461px)
+                left: 0px
+                top: -135px
 
         .tilt-circle-1
             left: -298px
             top: -12px
+            @media (max-width: 332px)
+                left: 128px
+                top: -250px 
+            @media (min-width: 333px) and (max-width: 461px)
+                left: -53px
+                top: -172px
+            @media (min-width: 462px) and (max-width: 530px)
+                left: 125px
+                top: -75px
