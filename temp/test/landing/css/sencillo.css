@@ -1678,3 +1678,67 @@ section.footer {
 section.footer p {
 		text-align: center;
 }
+
+section#sub-planes {
+		padding: 0px 20px 80px 20px;
+		background: #f3f5f4;
+		background: -webkit-gradient(linear, left bottom, left top, from(#f9faf9), to(#edf0ef));
+		background: -o-linear-gradient(bottom, #f9faf9 0%, #edf0ef 100%);
+		background: linear-gradient(0deg, #f9faf9 0%, #edf0ef 100%);
+}
+section#sub-planes h2 {
+		text-align: center;
+		color: #FF5851;
+		padding-top: 60px;
+		padding-bottom: 40px;
+}
+section#sub-planes .wrapper {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+}
+@media (max-width: 39.9375em) {
+		section#sub-planes .wrapper {
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+				    -ms-flex-direction: column;
+				        flex-direction: column;
+				-webkit-box-align: center;
+				    -ms-flex-align: center;
+				        align-items: center;
+		}
+}
+section#sub-planes .plan {
+		text-align: center;
+		line-height: 1.4em;
+}
+section#sub-planes .plan .card-content {
+		width: 15.25em;
+}
+section#sub-planes .plan-title {
+		font-weight: 400;
+		font-size: 1.25rem;
+		padding-bottom: 0.45rem;
+		color: #FF5851;
+}
+section#sub-planes .plan p {
+		font-size: 0.9rem;
+}
+@media (max-width: 63.9375em) {
+		section#sub-planes .plan p {
+				font-size: 0.9rem;
+		}
+}
+section#sub-planes .plan .price {
+		color: #00B3CB;
+		font-weight: bold;
+		font-size: 1.75rem;
+		margin-bottom: 0.15em;
+}
+section#sub-planes .plan .price .currency {
+		font-size: 1.125rem;
+}
+section#sub-planes .disclaimer {
+		margin-top: 3em;
+}
