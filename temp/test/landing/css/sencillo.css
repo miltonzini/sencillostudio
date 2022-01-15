@@ -1710,6 +1710,8 @@ section#sub-planes .wrapper {
 		}
 }
 section#sub-planes .plan {
+		padding-top: 4em;
+		padding-bottom: 4em;
 		text-align: center;
 		line-height: 1.4em;
 }
@@ -1732,9 +1734,9 @@ section#sub-planes .plan p {
 }
 section#sub-planes .plan .price {
 		color: #00B3CB;
-		font-weight: bold;
-		font-size: 1.75rem;
-		margin-bottom: 0.15em;
+		font-weight: 600;
+		font-size: 2.5rem;
+		margin-bottom: 0.35em;
 }
 section#sub-planes .plan .price .currency {
 		font-size: 1.125rem;
