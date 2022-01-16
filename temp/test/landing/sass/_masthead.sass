@@ -163,31 +163,28 @@ section#masthead-sm
             position: relative
             z-index: 1
             transform: scale(45%)
+            visibility: hidden
+            opacity: 0
 
 
-        .tilt-triangle-1
-            left: -30px
-            top: -20px
-            animation: shape-tilt-triangle-1 3s linear infinite
-
-        .tilt-square-1
-            left: -198px
-            top: 39px
-            animation: shape-tilt-square-1 4s linear infinite
-            @media (max-width: 461px)
-                left: 0px
-                top: -135px
-
-        .tilt-circle-1
-            left: -298px
-            top: -12px
-            animation: shape-tilt-circle-1 3s linear infinite
-            @media (max-width: 332px)
-                left: 128px
-                top: -250px 
-            @media (min-width: 333px) and (max-width: 461px)
-                left: -53px
-                top: -172px
-            @media (min-width: 462px) and (max-width: 530px)
-                left: 125px
-                top: -75px
+        .appear-triangle
+            animation: shape-appear-dissappear 3s linear infinite        
+            animation-iteration-count: 1
+        .appear-diamond
+            animation: shape-appear-dissappear 3s linear infinite
+            animation-iteration-count: 1
+            animation-delay: 0.5s  
+        .appear-pentagon
+            animation: shape-appear-dissappear 3s linear infinite
+            animation-iteration-count: 1
+            animation-delay: 1s
+        .appear-hendecagon
+            animation: shape-appear-dissappear 3s linear infinite
+            animation-iteration-count: 1
+            animation-delay: 1.5s
+        .appear-circle
+            animation: shape-appear-dissappear 3s linear infinite
+            animation-iteration-count: 1
+            animation-delay: 2s
+            top: 50px
+        
