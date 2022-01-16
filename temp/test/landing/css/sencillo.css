@@ -1166,15 +1166,15 @@ section#masthead-sm .shapes img {
 		opacity: 0;
 }
 section#masthead-sm .shapes .appear-triangle {
-		-webkit-animation: shape-appear-dissappear 3s linear infinite;
-		        animation: shape-appear-dissappear 3s linear infinite;
+		-webkit-animation: shape-appear-dissappear 1.7s linear infinite;
+		        animation: shape-appear-dissappear 1.7s linear infinite;
 		-webkit-animation-iteration-count: 1;
 		        animation-iteration-count: 1;
 		top: 90px;
 }
 section#masthead-sm .shapes .appear-diamond {
-		-webkit-animation: shape-appear-dissappear 3s linear infinite;
-		        animation: shape-appear-dissappear 3s linear infinite;
+		-webkit-animation: shape-appear-dissappear 1.7s linear infinite;
+		        animation: shape-appear-dissappear 1.7s linear infinite;
 		-webkit-animation-iteration-count: 1;
 		        animation-iteration-count: 1;
 		-webkit-animation-delay: 0.5s;
@@ -1182,8 +1182,8 @@ section#masthead-sm .shapes .appear-diamond {
 		top: 20px;
 }
 section#masthead-sm .shapes .appear-pentagon {
-		-webkit-animation: shape-appear-dissappear 3s linear infinite;
-		        animation: shape-appear-dissappear 3s linear infinite;
+		-webkit-animation: shape-appear-dissappear 1.7s linear infinite;
+		        animation: shape-appear-dissappear 1.7s linear infinite;
 		-webkit-animation-iteration-count: 1;
 		        animation-iteration-count: 1;
 		-webkit-animation-delay: 1s;
@@ -1191,17 +1191,23 @@ section#masthead-sm .shapes .appear-pentagon {
 		top: 70px;
 }
 section#masthead-sm .shapes .appear-hendecagon {
-		-webkit-animation: shape-appear-dissappear 3s linear infinite;
-		        animation: shape-appear-dissappear 3s linear infinite;
+		-webkit-animation: shape-appear-dissappear 1.7s linear infinite;
+		        animation: shape-appear-dissappear 1.7s linear infinite;
 		-webkit-animation-iteration-count: 1;
 		        animation-iteration-count: 1;
 		-webkit-animation-delay: 1.5s;
 		        animation-delay: 1.5s;
 		top: 10px;
 }
+@media (max-width: 459px) {
+		section#masthead-sm .shapes .appear-hendecagon {
+				left: 40px;
+				top: 25px;
+		}
+}
 section#masthead-sm .shapes .appear-circle {
-		-webkit-animation: shape-appear-dissappear 3s linear infinite;
-		        animation: shape-appear-dissappear 3s linear infinite;
+		-webkit-animation: shape-appear-dissappear 1.7s linear infinite;
+		        animation: shape-appear-dissappear 1.7s linear infinite;
 		-webkit-animation-iteration-count: 1;
 		        animation-iteration-count: 1;
 		-webkit-animation-delay: 2s;
