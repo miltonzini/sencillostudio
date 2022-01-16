@@ -1076,7 +1076,8 @@ section#masthead-lg .shapes .diamond-2 {
 }
 
 section#masthead-sm {
-		background: #fff;
+		background: #f3f5f4 url("../img/bg/hola.jpg") no-repeat;
+		background-size: cover;
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
@@ -1090,10 +1091,35 @@ section#masthead-sm {
 		-webkit-box-direction: normal;
 		    -ms-flex-direction: column;
 		        flex-direction: column;
-		height: 40vh;
+		height: 45vh;
 		overflow: hidden;
 		position: relative;
 		padding-top: 2em;
+}
+@media (max-width: 574px) {
+		section#masthead-sm {
+				background-position: center 50%;
+		}
+}
+@media (min-width: 575px) and (max-width: 690px) {
+		section#masthead-sm {
+				background-position: center 60%;
+		}
+}
+@media (min-width: 691px) and (max-width: 899px) {
+		section#masthead-sm {
+				background-position: center 64%;
+		}
+}
+@media (min-width: 900px) and (max-width: 1100px) {
+		section#masthead-sm {
+				background-position: center 65%;
+		}
+}
+@media (min-width: 1101px) {
+		section#masthead-sm {
+				background-position: center 64%;
+		}
 }
 section#masthead-sm .img-container {
 		/*background-color: pink*/
@@ -1743,4 +1769,5 @@ section#sub-planes .plan .price .currency {
 }
 section#sub-planes .disclaimer {
 		margin-top: 3em;
+		color: #495055;
 }
