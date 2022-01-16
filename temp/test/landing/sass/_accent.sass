@@ -1,8 +1,11 @@
 section.accent
     padding: 4.375em 20px
     color: $theme-soft
-    text-align: center
     font-style: italic
+    @include breakpoint-up(medium)
+        text-align: left
+    @include breakpoint-down(small)
+        text-align: center
 
     &-primary
         background: $theme-primary
@@ -36,6 +39,7 @@ section.accent
         font-size: 1.5em
         line-height: 1.3em
         z-index: 400
+        margin-bottom: 1em
         @include breakpoint-down(small)
             text-align: center
        
@@ -44,6 +48,8 @@ section.accent
         padding: 0.25rem 3rem 
         border: $theme-soft 1px solid
         border-radius: 40px
+        @include breakpoint-up(medium)
+            margin-left: 3em
     
     .shapes
         position: relative
