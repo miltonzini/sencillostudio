@@ -1170,6 +1170,7 @@ section#masthead-sm .shapes .appear-triangle {
 		        animation: shape-appear-dissappear 3s linear infinite;
 		-webkit-animation-iteration-count: 1;
 		        animation-iteration-count: 1;
+		top: 90px;
 }
 section#masthead-sm .shapes .appear-diamond {
 		-webkit-animation: shape-appear-dissappear 3s linear infinite;
@@ -1178,6 +1179,7 @@ section#masthead-sm .shapes .appear-diamond {
 		        animation-iteration-count: 1;
 		-webkit-animation-delay: 0.5s;
 		        animation-delay: 0.5s;
+		top: 20px;
 }
 section#masthead-sm .shapes .appear-pentagon {
 		-webkit-animation: shape-appear-dissappear 3s linear infinite;
@@ -1186,6 +1188,7 @@ section#masthead-sm .shapes .appear-pentagon {
 		        animation-iteration-count: 1;
 		-webkit-animation-delay: 1s;
 		        animation-delay: 1s;
+		top: 70px;
 }
 section#masthead-sm .shapes .appear-hendecagon {
 		-webkit-animation: shape-appear-dissappear 3s linear infinite;
@@ -1194,6 +1197,7 @@ section#masthead-sm .shapes .appear-hendecagon {
 		        animation-iteration-count: 1;
 		-webkit-animation-delay: 1.5s;
 		        animation-delay: 1.5s;
+		top: 10px;
 }
 section#masthead-sm .shapes .appear-circle {
 		-webkit-animation: shape-appear-dissappear 3s linear infinite;
@@ -1203,6 +1207,11 @@ section#masthead-sm .shapes .appear-circle {
 		-webkit-animation-delay: 2s;
 		        animation-delay: 2s;
 		top: 50px;
+}
+@media (max-width: 584px) {
+		section#masthead-sm .shapes .appear-circle {
+				left: 60px;
+		}
 }
 
 section#hola {
