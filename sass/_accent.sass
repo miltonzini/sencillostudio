@@ -35,24 +35,28 @@ section.accent
             text-align: center
 
     p
+        position: relative
         color: $theme-soft
         font-size: 1.5em
         line-height: 1.3em
-        z-index: 400
+        z-index: 3
         margin-bottom: 1em
         @include breakpoint-down(small)
             text-align: center
        
 
     a.button
+        //margin-top: 1em!important
         padding: 0.25rem 3rem 
         border: $theme-soft 1px solid
         border-radius: 40px
         @include breakpoint-up(medium)
             margin-left: 3em
     
+    
     .shapes
         position: relative
+        z-index: 1
         
         img
             position: absolute
@@ -132,3 +136,7 @@ section.accent
                     margin-bottom: 0.5em
                     font-weight: bold
                 
+body#planes
+    section.accent
+        p
+            margin-bottom: 0
