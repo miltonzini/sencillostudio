@@ -46,11 +46,13 @@ section.accent
        
 
     a.button
+        //margin-top: 1em!important
         padding: 0.25rem 3rem 
         border: $theme-soft 1px solid
         border-radius: 40px
         @include breakpoint-up(medium)
             margin-left: 3em
+    
     
     .shapes
         position: relative
@@ -134,3 +136,7 @@ section.accent
                     margin-bottom: 0.5em
                     font-weight: bold
                 
+body#planes
+    section.accent
+        p
+            margin-bottom: 0

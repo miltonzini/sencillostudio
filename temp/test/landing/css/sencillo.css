@@ -1574,6 +1574,10 @@ section.accent .modal .modal-content .combo h3 {
 		font-weight: bold;
 }
 
+body#planes section.accent p {
+		margin-bottom: 0;
+}
+
 section#trabajos {
 		padding: 5em 20px;
 		background: #f3f5f4;
