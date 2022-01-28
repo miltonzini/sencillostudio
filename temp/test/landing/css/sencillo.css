@@ -1696,8 +1696,9 @@ section.footer p.social {
 }
 section.footer p.social a.social {
 		font-size: 1.7em;
-		margin: 1em 0.3em;
+		margin: 1em 0.2em;
 		position: relative;
+		opacity: 0.8;
 		-webkit-transition: all 500ms ease;
 		-o-transition: all 500ms ease;
 		transition: all 500ms ease;
