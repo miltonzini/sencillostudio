@@ -1691,6 +1691,20 @@ section.footer {
 section.footer p {
 		text-align: center;
 }
+section.footer p.social {
+		margin-bottom: 1em;
+}
+section.footer p.social a.social {
+		font-size: 1.7em;
+		margin: 1em 0.3em;
+		position: relative;
+		-webkit-transition: all 500ms ease;
+		-o-transition: all 500ms ease;
+		transition: all 500ms ease;
+}
+section.footer p.social a.social:hover {
+		color: #00B3CB;
+}
 
 section#sub-planes {
 		padding: 0px 20px 80px 20px;
