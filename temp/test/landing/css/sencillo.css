@@ -1670,7 +1670,7 @@ section#contacto {
 }
 @media (min-width: 950px) {
 		section#contacto {
-				background-position-x: left bottom;
+				background-position: left bottom;
 		}
 }
 section#contacto .link-wrapper {
