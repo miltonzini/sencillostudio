@@ -1,9 +1,20 @@
 section#contacto
     padding: 110px 20px
-    background: white
+    background: url("../img/bg/idea-sencillo-studio.jpg")
+    background-size: cover
     color: $theme-primary
     text-align: center
     line-height: 1.3em
+    @media (max-width: 420px)
+        background-position-x: 35%
+    @media (min-width: 421px) and (max-width: 639px)
+        background-position-x: 35%
+    @media (min-width: 640px) and (max-width: 800px)
+        background-position-x: 45%
+    @media (min-width: 801px) and (max-width: 949px)
+        background-position-x: 45%
+    @media (min-width: 950px)
+        background-position: left bottom
     
 
     .link-wrapper
