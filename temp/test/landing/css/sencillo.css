@@ -1642,10 +1642,36 @@ section#trabajos .trabajo ul {
 
 section#contacto {
 		padding: 110px 20px;
-		background: white;
+		background: url("../img/bg/idea-sencillo-studio.jpg");
+		background-size: cover;
 		color: #FF5851;
 		text-align: center;
 		line-height: 1.3em;
+}
+@media (max-width: 420px) {
+		section#contacto {
+				background-position-x: 35%;
+		}
+}
+@media (min-width: 421px) and (max-width: 639px) {
+		section#contacto {
+				background-position-x: 35%;
+		}
+}
+@media (min-width: 640px) and (max-width: 800px) {
+		section#contacto {
+				background-position-x: 45%;
+		}
+}
+@media (min-width: 801px) and (max-width: 949px) {
+		section#contacto {
+				background-position-x: 45%;
+		}
+}
+@media (min-width: 950px) {
+		section#contacto {
+				background-position-x: left bottom;
+		}
 }
 section#contacto .link-wrapper {
 		display: -webkit-box;
