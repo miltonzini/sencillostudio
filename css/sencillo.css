@@ -799,6 +799,11 @@ li::before {
 		margin-bottom: 0.12rem;
 }
 
+span.soft {
+		color: #777c7f;
+		font-size: 0.9em;
+}
+
 .header.open {
 		display: block;
 }
