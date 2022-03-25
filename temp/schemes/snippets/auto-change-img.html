@@ -1,0 +1,88 @@
+[Snippet: Imágenes que van cambiando]
+[Lo usé en un principio para Plaza Asturias (sección Salón)]
+
+
+<html>
+    <div class="img">
+        <img id="slider" src="img/fotos/sm/plaza-asturias-salon-01.jpg" alt="Salón Plaza Asturias">
+    </div>
+</html>
+
+
+
+
+
+
+<script type="text/javascript">
+    var images = [];
+
+    images[0] = ['img/fotos/sm/plaza-asturias-salon-01.jpg'];
+    images[1] = ['img/fotos/sm/plaza-asturias-salon-03.jpg'];
+    images[2] = ['img/fotos/sm/plaza-asturias-salon-04.jpg'];
+    images[3] = ['img/fotos/sm/plaza-asturias-salon-05.jpg'];
+    images[4] = ['img/fotos/sm/plaza-asturias-salon-09.jpg'];
+    images[5] = ['img/fotos/sm/plaza-asturias-salon-16.jpg'];
+    images[6] = ['img/fotos/sm/plaza-asturias-salon-18.jpg'];
+    images[7] = ['img/fotos/sm/plaza-asturias-salon-19.jpg'];
+    images[8] = ['img/fotos/sm/plaza-asturias-salon-26.jpg'];
+    images[9] = ['img/fotos/sm/plaza-asturias-salon-29.jpg'];
+    images[10] = ['img/fotos/sm/plaza-asturias-salon-34.jpg'];
+    images[11] = ['img/fotos/sm/plaza-asturias-salon-39.jpg'];
+    var index = 0;
+
+    function change() {
+    document.getElementById("slider").src = images[index];
+    if (index == 11) {
+        index = 0;
+    } else {
+        index++;
+    }
+
+    setTimeout(change, 3000);
+    }
+
+    window.onload = change();
+</script>
+
+
+
+<sass>
+    section.img-and-description
+    color: $theme-dark
+    background: $theme-soft
+    min-height: 25rem
+    padding: 5.625rem 0
+    .row
+        display: flex
+        @media (max-width: 690px)
+            flex-direction: column
+            justify-content: center
+            text-align: center
+        @media (min-width: 691px)
+            flex-direction: row
+    
+    div.img
+        //background: #cc99ff
+        img
+            max-width: 20rem
+            @media (max-width: 380px)
+                max-width: 100%
+            @media (min-width: 381px) and (max-width: 690px)
+                margin-bottom: 1rem
+            
+            @media (min-width: 691px) and (max-width: 796px)
+                max-width: 15rem
+                margin-right: 1.5rem
+
+            @media (min-width: 797px)
+                margin-right: 2rem
+        
+        //width: 588px
+        //height: 432px
+    .text
+        //background: pink
+        max-width: 23rem
+    .lastMain
+        img
+            max-width: 400px
+</sass>
