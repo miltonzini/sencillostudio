@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form snippet</title>
+    <style>
+        .link {
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <p>nota: en proceso, form sin estilos, abre cliente de mail y completa los datos</p>
+    <form id="form" action="#" class="form"> 
+        <h3 class="tag">Escribinos</h3>
+        <label for="name">Nombre</label>
+        <input name="name" required type="text" id="name">
+        <label for="email">Email</label>
+        <input name="email" type="text" id="email" required>
+        <label for="message"></label>
+        <textarea name="message" id="message"></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+    <a href="mailto:miltonzini@gmail.com" target="_blank" class="hidden">mail</a>
+
+    <script>
+        const $form = document.querySelector('#form');
+        const $buttonMailto = document.querySelector('#link');
+
+        $form.addEventListener('submit', handleSubmit)
+
+        function handleSubmit(event) {
+            event.preventDefault()
+            const form = new FormData(this)
+            //console.log(form.get('name'))
+            $buttonMailto.setAttribute('href', 'mailto:miltonzini@gmail.com?subject=${form.get('name')}${form.get('email')}&body=${form.get('message')}')
+            $buttonMailto.click()
+
+        }
+    </script>
+</body>
+</html>
